@@ -2,8 +2,8 @@
 
 ## 1. 概要
 
-Nikon Zマウントレンズのラインナップを焦点距離軸で視覚化する静的Webページ。  
-GitHub Pages でホスティングする。フレームワーク不使用、HTML / CSS / JavaScript のみで構成する。
+Nikon Zマウントレンズのラインナップを焦点距離軸で視覚化する静的Webページ。
+GitHub Pages でホスティングする。**React + TypeScript（Vite）** で構成する。
 
 ---
 
@@ -25,12 +25,42 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 ```
 /
+├── public/
+│   └── data/
+│       ├── config.json       # 表示設定
+│       └── lenses.json       # レンズデータ
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── styles/
+│   │   └── app.css
+│   ├── types/
+│   │   └── index.ts          # 型定義
+│   ├── lib/
+│   │   ├── geometry.ts       # 座標計算
+│   │   ├── filterLogic.ts    # フィルター処理
+│   │   └── formatters.ts     # 表示フォーマット
+│   ├── hooks/
+│   │   ├── useAppData.ts     # データ取得
+│   │   ├── useActiveAttributes.ts
+│   │   └── useFilterState.ts
+│   └── components/
+│       ├── ChipBar.tsx
+│       ├── controls/
+│       │   ├── Controls.tsx
+│       │   ├── AttributeCheckboxes.tsx
+│       │   ├── FilterPanel.tsx
+│       │   ├── RangeFilterItem.tsx
+│       │   ├── SelectFilterItem.tsx
+│       │   └── ToggleFilterItem.tsx
+│       └── table/
+│           ├── TableWrapper.tsx
+│           ├── TableHeader.tsx
+│           ├── Section.tsx
+│           ├── LensRow.tsx
+│           ├── PrimeLens.tsx
+│           └── ZoomLens.tsx
 ├── index.html
-├── style.css
-├── main.js
-├── data/
-│   ├── config.json       # 表示設定
-│   └── lenses.json       # レンズデータ
 └── README.md
 ```
 
@@ -44,6 +74,9 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 ┌─────────────────────────────────────┐
 │  表示属性チェックボックス群           │  ← 表の上部
 │  フィルターパネル                    │
+│  フィルターチップバー                │
+├──────────────────────────────────────┤
+│  テーブルメタ情報バー（免責・更新日・画像保存ボタン）│
 ├──────┬──────────────────────────────┤
 │      │  焦点距離ヘッダー行（FX / DX） │
 │セク  ├──────────────────────────────┤
@@ -57,9 +90,9 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 ### 4.2 焦点距離ヘッダー
 
-- 表の最上部に FX 換算値を第1行、DX 換算値を第2行（参考値）として常時表示する。
+- 表の最上部に FX 換算値を第1行、DX 換算値を第2行（参考値・やや小さく薄く表示）として常時表示する。
 - 焦点距離の基準は常に FX 換算値とし、フィルター・配置ともに FX 換算値を使用する。DX 行は対応する FX 値の参考情報として表示するにとどめる。
-- 各列幅は `config.json` の `focalLengthColumns` で定義する。
+- 各マーカー間の幅は `config.json` の `focalLengthMarkers` の `spacingToNext` で定義する。
 
 ### 4.3 セクション
 
@@ -80,20 +113,26 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 #### 単焦点レンズ
 
 - **図形**：塗りつぶし円（●）
-- 円の中心が該当する焦点距離の列中央に来るよう配置する。
-- DX フォーマット専用レンズは**表記上の焦点距離（実焦点距離）**の列に配置する。FX 換算はしない。`lenses.json` の `focalLengthFxMm` には `focalLengthMm` と同じ値を設定する。
-- 円の直径は `config.json` の `primeDotDiameter` で指定する。
+- 円の中心が該当する焦点距離のマーカー位置に来るよう配置する。
+- DX フォーマット専用レンズは**表記上の焦点距離（実焦点距離）**の位置に配置する。FX 換算はしない。`lenses.json` の `focalLengthFxMm` には `focalLengthMm` と同じ値を設定する。
+- 円の直径は `config.json` の `primeDotDiameterPx` で指定する。
 
 #### ズームレンズ
 
 - **図形**：角丸付き長方形（横バー）
-- 左端が最短焦点距離の列に、右端が最長焦点距離の列に一致するよう配置する。DX 専用ズームレンズも同様に**表記上の焦点距離（実焦点距離）**で配置する（`focalLengthMinFxMm`・`focalLengthMaxFxMm` は `Min/MaxMm` と同値）。
+- 左端が最短焦点距離のマーカー位置に、右端が最長焦点距離のマーカー位置に一致するよう配置する。DX 専用ズームレンズも同様に**表記上の焦点距離（実焦点距離）**で配置する（`focalLengthMinFxMm`・`focalLengthMaxFxMm` は `Min/MaxMm` と同値）。
 - 高さ・角丸半径は `config.json` で指定する。
 
 #### レンズ名表示
 
 - 図形の直下にレンズ名を表示する。
 - 有効な表示属性があれば、レンズ名のさらに下に縦に並べる。
+
+### 4.6 テーブルメタ情報バー
+
+- 表の直上（スクロール外）に1行のバーを表示する。
+- 左側：免責テキスト（「掲載情報は参考目的のみです。最新情報はメーカー公式サイトをご確認ください。」）
+- 右側：最終更新日（`lenses.json` の `lastUpdated` が存在する場合のみ表示）と画像保存ボタン。
 
 ---
 
@@ -105,8 +144,8 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 | 属性キー | 表示ラベル |
 |---|---|
-| `weight` | 重さ |
-| `price` | 価格 |
+| `weightG` | 重さ |
+| `priceJpy` | 価格 |
 | `rentalAvailable` | レンタル |
 
 属性の種類・ラベルは `config.json` で定義し、コードを変更せずに追加・削除できる。
@@ -141,10 +180,10 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 ## 7. フィルター機能
 
-フィルターパネルを表の上部（チェックボックス群の下）にアコーディオン形式で配置する。  
-「フィルター」ボタンをクリックするとパネルが展開・折りたたまれる。  
-展開時のみ各フィルター項目を表示する。  
-適用中のフィルターは、フィルターパネルとテーブルの間に**フィルターチップバー**として表示する。  
+フィルターパネルを表の上部（チェックボックス群の下）にアコーディオン形式で配置する。
+「フィルター」ボタンをクリックするとパネルが展開・折りたたまれる。
+展開時のみ各フィルター項目を表示する。
+適用中のフィルターは、フィルターパネルとテーブルの間に**フィルターチップバー**として表示する。
 チップバーは横スクロール可能な1行で、適用中の各フィルターをテキストチップとして並べる。チップの表示形式は以下の通り。
 
 | フィルター | チップ表示例 |
@@ -153,86 +192,115 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 | 最大絞り | `最大絞り: f/2.8以下` |
 | 価格 | `価格: 〜300,000円` |
 | レンタル可否 | `レンタル可` |
-| フォーマット | `フォーマット: FX対応` / `フォーマット: DX専用` |  
-フィルターが1件も適用されていない場合はチップバーを非表示にする。  
-各チップには×ボタンを設け、クリックするとそのフィルターを単独で解除できる。  
-フィルターに一致しないレンズは非表示にする。  
-その結果、表示すべきレンズが0件になった行も非表示にする。  
+| フォーマット | `フォーマット: FX対応` / `フォーマット: DX専用` |
+| 手ぶれ補正 | `手ぶれ補正` |
+| メーカー | `メーカー: タムロン` |
+
+フィルターが1件も適用されていない場合はチップバーを非表示にする。
+各チップには×ボタンを設け、クリックするとそのフィルターを単独で解除できる。
+フィルターに一致しないレンズは非表示にする。
+その結果、表示すべきレンズが0件になった行も非表示にする。
 さらに、セクション内のすべての行が非表示になった場合はセクションごと非表示にする。
 
 | フィルター名 | 種別 | 対象属性 |
 |---|---|---|
 | 焦点距離 | 範囲スライダー（min / max） | `focalLengthFxMm`（単焦点）または `focalLengthMinFxMm` 〜 `focalLengthMaxFxMm`（ズーム）。DX レンズも表記上の焦点距離（実焦点距離）で評価する。 |
 | 最大絞り | セレクトボックス（以下） | `maxAperture` |
-| 価格 | 範囲スライダー（min / max） | `priceJpy` |
+| 価格 | 範囲スライダー（min / max） | `priceJpy`。min は 0 固定、max はデータから動的に計算。 |
 | レンタル可否 | トグル | `rentalAvailable` |
-| フォーマット | セレクトボックス（すべて / FX対応 / DX専用） | `format` |
+| フォーマット | セレクトボックス（すべて / FX / DX） | `format` |
+| 手ぶれ補正 | トグル | `imageStabilization` |
+| メーカー | セレクトボックス（すべて / ニコン / タムロン / シグマ） | `manufacturer` |
 
 フィルターの種類・パラメーターは `config.json` で定義する。
 
 ---
 
-## 8. config.json 仕様
+## 8. 画像保存機能
+
+- テーブルメタ情報バーの右側に「📷 画像保存」ボタンを配置する。
+- クリックすると `html2canvas` を使用してテーブル全体を PNG 画像として保存する（ファイル名：`lens-list.png`）。
+- 保存中はボタンを「保存中…」テキストに変更し、無効化する。
+- 画像キャプチャ前にスクロール位置をリセットし、キャプチャ後に元の位置へ復元する。
+
+---
+
+## 9. config.json 仕様
 
 ```jsonc
 {
-  "focalLengthColumns": [
-    { "fxMm": 12,  "dxMm": 18,   "widthPx": 80 },
-    { "fxMm": 24,  "dxMm": 36,   "widthPx": 120 },
+  "focalLengthMarkers": [
+    // マーカー群。fxMm=0 の原点マーカーから始まる。
+    // spacingToNext: 次のマーカーまでのピクセル幅
+    { "fxMm": 0,   "dxMm": 0,    "spacingToNext": 40 },
+    { "fxMm": 12,  "dxMm": 18,   "spacingToNext": 100 },
+    { "fxMm": 24,  "dxMm": 36,   "spacingToNext": 105 },
     // ...
+    { "fxMm": 800, "dxMm": 1200, "spacingToNext": 0 }
   ],
-  "columnSpacingPx": 8,          // 列間の余白
+  "rightPaddingPx": 120,          // 最右マーカーからコンテンツ右端までの余白
 
-  "rowBaseHeightPx": 72,          // 行の基本高さ（図形 + レンズ名のみの場合）
+  "rowBaseHeightPx": 78,          // 行の基本高さ（図形 + レンズ名のみの場合）
   "attributeRowHeightPx": 16,     // 表示属性1件あたりの追加高さ
-  "sectionLabelWidthPx": 40,      // セクションラベル列の幅
+  "sectionLabelWidthPx": 44,      // セクションラベル列の幅
 
-  "primeDotDiameter": 18,         // 単焦点ドットの直径 (px)
-  "zoomBarHeightPx": 18,          // ズームバーの高さ (px)
-  "zoomBarBorderRadiusPx": 9,     // ズームバーの角丸半径 (px)
+  "primeDotDiameterPx": 14,       // 単焦点ドットの直径 (px)
+  "zoomBarHeightPx": 14,          // ズームバーの高さ (px)
+  "zoomBarBorderRadiusPx": 5,     // ズームバーの角丸半径 (px)
 
   "colors": {
     "headerBackground": "#1a1a1a",
     "headerText": "#ffffff",
     "sectionLabelBackground": "#2c2c2c",
     "sectionLabelText": "#ffffff",
-    "rowBackground": "#dcdcdc",    // 行の背景色（全行共通）
-    "gridLineColor": "#ffffff",     // 縦グリッド線の色（横線はセクション間のみ）
-    "sectionDividerColor": "#ffffff", // セクション間区切り線の色
-    "lensDot": "#3300ff",
-    "zoomBar": "#3300ff",
-    "lensNameText": "#000000",
+    "rowBackground": "#dcdcdc",
+    "gridLineColor": "#ffffff",
+    "sectionDividerColor": "#ffffff",
+    "lensDot": "#2211cc",
+    "zoomBar": "#2211cc",
+    "lensNameText": "#111111",
     "attributeText": "#555555"
   },
 
   "typography": {
-    "lensNameFontSizePx": 11,
-    "attributeFontSizePx": 10,
-    "headerFontSizePx": 13
+    "lensNameFontSizePx": 10,
+    "attributeFontSizePx": 9,
+    "headerFontSizePx": 11
   },
 
   "displayAttributes": [
-    { "key": "weight",         "label": "重さ",   "unit": "g",  "format": "number" },
-    { "key": "price",          "label": "価格",   "unit": "円", "format": "number" },
-    { "key": "rentalAvailable","label": "レンタル","unit": "",   "format": "boolean" }
+    { "key": "weightG",         "label": "重さ",   "unit": "g",  "format": "number" },
+    { "key": "priceJpy",        "label": "価格",   "unit": "円", "format": "number" },
+    { "key": "rentalAvailable", "label": "レンタル","unit": "",   "format": "boolean" }
   ],
 
   "filters": [
-    { "key": "focalLength",  "label": "焦点距離", "type": "range",  "unit": "mm" },
-    { "key": "maxAperture",  "label": "最大絞り", "type": "select", "options": [0.95, 1.2, 1.4, 1.7, 1.8, 2.0, 2.8, 3.5, 4.0, 4.5, 5.6, 6.3] },
-    { "key": "price",        "label": "価格",     "type": "range",  "unit": "円" },
-    { "key": "rentalAvailable","label": "レンタル可","type": "toggle" },
-    { "key": "format", "label": "フォーマット", "type": "select", "options": ["all", "FX", "DX"] }
+    { "key": "focalLength",        "label": "焦点距離", "type": "range",  "unit": "mm", "min": 12, "max": 800 },
+    { "key": "maxAperture",        "label": "最大絞り", "type": "select", "options": [0.95, 1.2, 1.4, 1.7, 1.8, 2.0, 2.8, 3.5, 4.0, 4.5, 5.6, 6.3] },
+    { "key": "priceJpy",           "label": "価格",     "type": "range",  "unit": "円", "step": 10000 },
+    { "key": "rentalAvailable",    "label": "レンタル可","type": "toggle" },
+    { "key": "format",             "label": "フォーマット", "type": "select", "options": ["FX", "DX"] },
+    { "key": "imageStabilization", "label": "手ぶれ補正", "type": "toggle" },
+    { "key": "manufacturer",       "label": "メーカー", "type": "select", "options": ["ニコン", "タムロン", "シグマ"] }
   ]
 }
 ```
 
+### フィルター初期値の算出
+
+- `range` 型フィルター：
+  - `focalLength`：`min`・`max` は config.json の値を使用。
+  - `priceJpy`：`min` は 0 固定。`max` はレンズデータ全体の最高価格を 10,000 円単位で切り上げた値（動的算出）。
+- `select` 型フィルター：初期値は `"all"`（全件表示）。
+- `toggle` 型フィルター：初期値は `false`（絞り込みなし）。
+
 ---
 
-## 9. lenses.json 仕様
+## 10. lenses.json 仕様
 
 ```jsonc
 {
+  "lastUpdated": "2025-06-01",    // 任意。テーブルメタ情報バーに表示される最終更新日
   "sections": [
     {
       "id": "prime",
@@ -245,14 +313,15 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
               "id": "z-35-1.2-s",
               "name": "Z 35mm f/1.2 S",
               "type": "prime",              // "prime" | "zoom"
+              "manufacturer": "ニコン",     // "ニコン" | "タムロン" | "シグマ" など
               "format": "FX",               // "FX" | "DX"
               "focalLengthMm": 35,          // 実焦点距離（単焦点）
               "focalLengthFxMm": 35,        // FX換算値（単焦点）。FXレンズは focalLengthMm と同値
               "maxAperture": 1.2,
-              "weightG": 785,
-              "priceJpy": 330000,
-              "rentalAvailable": true,
-              "imageStabilization": false
+              "weightG": 785,               // 重さ (g)。不明の場合は null
+              "priceJpy": 330000,           // 実勢価格 (円)。不明の場合は null
+              "rentalAvailable": true,      // レンタル可否。不明の場合は null
+              "imageStabilization": false   // 手ぶれ補正の有無
             }
           ]
         },
@@ -262,8 +331,9 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
             {
               "id": "z-14-24-2.8-s",
               "name": "Z 14-24mm f/2.8 S",
-              "type": "zoom",               // "prime" | "zoom"
-              "format": "FX",               // "FX" | "DX"
+              "type": "zoom",
+              "manufacturer": "ニコン",
+              "format": "FX",
               "focalLengthMinMm": 14,       // 実最短焦点距離（ズーム）
               "focalLengthMaxMm": 24,       // 実最長焦点距離（ズーム）
               "focalLengthMinFxMm": 14,     // FX換算最短焦点距離（ズーム）。FXレンズは Min/MaxMm と同値
@@ -285,12 +355,13 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 ---
 
-## 10. 非機能要件
+## 11. 非機能要件
 
 | 項目 | 要件 |
 |---|---|
 | ホスティング | GitHub Pages（静的配信） |
-| 依存ライブラリ | なし（バニラ HTML / CSS / JS） |
+| 技術スタック | React 19 + TypeScript 5 + Vite 7 |
+| 外部ライブラリ | `html2canvas`（画像保存のみ） |
 | ブラウザ対応 | Chrome / Firefox / Safari 最新版 |
 | レスポンシブ | 横スクロール対応（表は最小幅を維持し、画面幅が不足する場合は横スクロール） |
 | アクセシビリティ | チェックボックス・フィルターには `<label>` を付与する |
@@ -298,7 +369,7 @@ GitHub Pages でホスティングする。フレームワーク不使用、HTML
 
 ---
 
-## 11. 将来拡張（スコープ外）
+## 12. 将来拡張（スコープ外）
 
 - FX / DX 焦点距離の切り替え表示
 - レンズ詳細モーダル（クリックで仕様を表示）
