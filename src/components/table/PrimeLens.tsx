@@ -1,0 +1,53 @@
+import type { PrimeLens as PrimeLensType, AppConfig, GeometryContext } from '../../types';
+import { getX } from '../../lib/geometry';
+import { formatAttributeValue } from '../../lib/formatters';
+
+interface Props {
+  lens: PrimeLensType;
+  config: AppConfig;
+  geometry: GeometryContext;
+  activeAttributes: ReadonlySet<string>;
+}
+
+const TOP_PAD = 10;
+
+export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
+  const dotD = config.primeDotDiameterPx;
+  const dotR = dotD / 2;
+  const cx = getX(lens.focalLengthFxMm, geometry.markers);
+
+  return (
+    <div
+      className="lens-item"
+      data-lens-id={lens.id}
+      style={{ left: cx - dotR, top: TOP_PAD, width: dotD, overflow: 'visible' }}
+    >
+      <div
+        className="lens-dot"
+        style={{ width: dotD, height: dotD }}
+      />
+      <div
+        className="lens-text-box"
+        style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', textAlign: 'center', marginTop: 3 }}
+      >
+        <div
+          className="lens-name"
+          style={{ fontSize: config.typography.lensNameFontSizePx }}
+        >
+          {lens.name}
+        </div>
+        {config.displayAttributes
+          .filter(attr => activeAttributes.has(attr.key))
+          .map(attr => (
+            <div
+              key={attr.key}
+              className="lens-attr"
+              style={{ fontSize: config.typography.attributeFontSizePx }}
+            >
+              {formatAttributeValue(lens, attr)}
+            </div>
+          ))}
+      </div>
+    </div>
+  );
+}

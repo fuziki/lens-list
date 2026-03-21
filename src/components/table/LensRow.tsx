@@ -1,0 +1,67 @@
+import { useMemo } from 'react';
+import type { LensRow as LensRowType, AppConfig, GeometryContext, FilterState, FilterConfig } from '../../types';
+import { lensMatchesFilters } from '../../lib/filterLogic';
+import { PrimeLens } from './PrimeLens';
+import { ZoomLens } from './ZoomLens';
+
+interface Props {
+  row: LensRowType;
+  config: AppConfig;
+  geometry: GeometryContext;
+  filterState: FilterState;
+  filters: FilterConfig[];
+  activeAttributes: ReadonlySet<string>;
+  rowHeight: number;
+}
+
+export function LensRow({ row, config, geometry, filterState, filters, activeAttributes, rowHeight }: Props) {
+  const visibleLenses = useMemo(
+    () => row.lenses.filter(lens => lensMatchesFilters(lens, filterState, filters)),
+    [row.lenses, filterState, filters]
+  );
+
+  if (visibleLenses.length === 0) return null;
+
+  return (
+    <div
+      className="row"
+      data-row-id={row.id}
+      style={{ height: rowHeight }}
+    >
+      {geometry.markers.map(m => (
+        <div
+          key={'vline-' + m.fxMm}
+          style={{
+            position: 'absolute',
+            left: m.x,
+            top: 0,
+            bottom: 0,
+            width: 1,
+            background: 'rgba(255,255,255,0.6)',
+            pointerEvents: 'none',
+            zIndex: 0,
+          }}
+        />
+      ))}
+      {visibleLenses.map(lens =>
+        lens.type === 'prime' ? (
+          <PrimeLens
+            key={lens.id}
+            lens={lens}
+            config={config}
+            geometry={geometry}
+            activeAttributes={activeAttributes}
+          />
+        ) : (
+          <ZoomLens
+            key={lens.id}
+            lens={lens}
+            config={config}
+            geometry={geometry}
+            activeAttributes={activeAttributes}
+          />
+        )
+      )}
+    </div>
+  );
+}

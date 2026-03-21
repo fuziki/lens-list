@@ -1,0 +1,1019 @@
+{
+  "lastUpdated": "2026-03-21",
+  "sections": [
+    {
+      "id": "prime",
+      "label": "単焦点レンズ",
+      "rows": [
+        {
+          "id": "prime-row-0",
+          "lenses": [
+            {
+              "id": "z-58-0.95-s-noct",
+              "name": "Z 58mm f/0.95 S Noct",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 58,
+              "focalLengthFxMm": 58,
+              "maxAperture": 0.95,
+              "weightG": 2000,
+              "priceJpy": 1138500,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-400-2.8-tc-vr-s",
+              "name": "Z 400mm f/2.8 TC VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 400,
+              "focalLengthFxMm": 400,
+              "maxAperture": 2.8,
+              "weightG": 2950,
+              "priceJpy": 1809500,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-1",
+          "lenses": [
+            {
+              "id": "z-35-1.2-s",
+              "name": "Z 35mm f/1.2 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.2,
+              "weightG": 1060,
+              "priceJpy": 437800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-50-1.2-s",
+              "name": "Z 50mm f/1.2 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.2,
+              "weightG": 1090,
+              "priceJpy": 308000,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-85-1.2-s",
+              "name": "Z 85mm f/1.2 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.2,
+              "weightG": 1160,
+              "priceJpy": 404800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-400-4.5-vr-s",
+              "name": "Z 400mm f/4.5 VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 400,
+              "focalLengthFxMm": 400,
+              "maxAperture": 4.5,
+              "weightG": 1160,
+              "priceJpy": 496100,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            },
+            {
+              "id": "z-600-4-tc-vr-s",
+              "name": "Z 600mm f/4 TC VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 600,
+              "focalLengthFxMm": 600,
+              "maxAperture": 4.0,
+              "weightG": 3260,
+              "priceJpy": 2189000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-2",
+          "lenses": [
+            {
+              "id": "z-35-1.4",
+              "name": "Z 35mm f/1.4",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.4,
+              "weightG": 415,
+              "priceJpy": 104500,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-50-1.4",
+              "name": "Z 50mm f/1.4",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.4,
+              "weightG": 420,
+              "priceJpy": 81400,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-600-6.3-vr-s",
+              "name": "Z 600mm f/6.3 VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 600,
+              "focalLengthFxMm": 600,
+              "maxAperture": 6.3,
+              "weightG": 1390,
+              "priceJpy": 792000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            },
+            {
+              "id": "z-800-6.3-vr-s",
+              "name": "Z 800mm f/6.3 VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 800,
+              "focalLengthFxMm": 800,
+              "maxAperture": 6.3,
+              "weightG": 2385,
+              "priceJpy": 962500,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-3",
+          "lenses": [
+            {
+              "id": "z-24-1.8-s",
+              "name": "Z 24mm f/1.8 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.8,
+              "weightG": 450,
+              "priceJpy": 150700,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-35-1.8-s",
+              "name": "Z 35mm f/1.8 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.8,
+              "weightG": 370,
+              "priceJpy": 125400,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-50-1.8-s",
+              "name": "Z 50mm f/1.8 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.8,
+              "weightG": 415,
+              "priceJpy": 91300,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-85-1.8-s",
+              "name": "Z 85mm f/1.8 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.8,
+              "weightG": 470,
+              "priceJpy": 118800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-135-1.8-s-plena",
+              "name": "Z 135mm f/1.8 S Plena",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 135,
+              "focalLengthFxMm": 135,
+              "maxAperture": 1.8,
+              "weightG": 995,
+              "priceJpy": 399300,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "prime-row-4",
+          "lenses": [
+            {
+              "id": "z-20-1.8-s",
+              "name": "Z 20mm f/1.8 S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 20,
+              "focalLengthFxMm": 20,
+              "maxAperture": 1.8,
+              "weightG": 505,
+              "priceJpy": 157300,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-mc-105-2.8-vr-s",
+              "name": "Z MC 105mm f/2.8 VR S",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 105,
+              "focalLengthFxMm": 105,
+              "maxAperture": 2.8,
+              "weightG": 630,
+              "priceJpy": 143000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            },
+            {
+              "id": "z-mc-50-2.8",
+              "name": "Z MC 50mm f/2.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 2.8,
+              "weightG": 260,
+              "priceJpy": 93500,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "prime-row-dx",
+          "lenses": [
+            {
+              "id": "z-dx-mc-35-1.7",
+              "name": "Z DX MC 35mm f/1.7",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.7,
+              "weightG": 220,
+              "priceJpy": 64900,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compact-prime",
+      "label": "薄型単焦点レンズ",
+      "rows": [
+        {
+          "id": "compact-row-1",
+          "lenses": [
+            {
+              "id": "z-26-2.8",
+              "name": "Z 26mm f/2.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 26,
+              "focalLengthFxMm": 26,
+              "maxAperture": 2.8,
+              "weightG": 125,
+              "priceJpy": 72600,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "compact-row-2",
+          "lenses": [
+            {
+              "id": "z-28-2.8",
+              "name": "Z 28mm f/2.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 28,
+              "focalLengthFxMm": 28,
+              "maxAperture": 2.8,
+              "weightG": 155,
+              "priceJpy": 36300,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-40-2",
+              "name": "Z 40mm f/2",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 40,
+              "focalLengthFxMm": 40,
+              "maxAperture": 2.0,
+              "weightG": 170,
+              "priceJpy": 36300,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "compact-row-0-dx",
+          "lenses": [
+            {
+              "id": "z-dx-24-1.7",
+              "name": "Z DX 24mm f/1.7",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.7,
+              "weightG": 135,
+              "priceJpy": 40700,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "label": "ズームレンズ",
+      "rows": [
+        {
+          "id": "zoom-row-0",
+          "lenses": [
+            {
+              "id": "z-14-24-2.8-s",
+              "name": "Z 14-24mm f/2.8 S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 14,
+              "focalLengthMaxMm": 24,
+              "focalLengthMinFxMm": 14,
+              "focalLengthMaxFxMm": 24,
+              "maxAperture": 2.8,
+              "weightG": 650,
+              "priceJpy": 348700,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-24-70-2.8-s-ii",
+              "name": "Z 24-70mm f/2.8 S II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 675,
+              "priceJpy": 371800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-70-200-2.8-vr-s-ii",
+              "name": "Z 70-200mm f/2.8 VR S II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 2.8,
+              "weightG": 998,
+              "priceJpy": 443300,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-1",
+          "lenses": [
+            {
+              "id": "z-17-28-2.8",
+              "name": "Z 17-28mm f/2.8",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 17,
+              "focalLengthMaxMm": 28,
+              "focalLengthMinFxMm": 17,
+              "focalLengthMaxFxMm": 28,
+              "maxAperture": 2.8,
+              "weightG": 450,
+              "priceJpy": 165000,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-28-75-2.8",
+              "name": "Z 28-75mm f/2.8",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 75,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 75,
+              "maxAperture": 2.8,
+              "weightG": 565,
+              "priceJpy": 104380,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-2",
+          "lenses": [
+            {
+              "id": "z-70-180-2.8",
+              "name": "Z 70-180mm f/2.8",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 180,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 180,
+              "maxAperture": 2.8,
+              "weightG": 795,
+              "priceJpy": 145700,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-180-600-5.6-6.3-vr",
+              "name": "Z 180-600mm f/5.6-6.3 VR",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 180,
+              "focalLengthMaxMm": 600,
+              "focalLengthMinFxMm": 180,
+              "focalLengthMaxFxMm": 600,
+              "maxAperture": 5.6,
+              "weightG": 1460,
+              "priceJpy": 229000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-4",
+          "lenses": [
+            {
+              "id": "z-14-30-4-s",
+              "name": "Z 14-30mm f/4 S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 14,
+              "focalLengthMaxMm": 30,
+              "focalLengthMinFxMm": 14,
+              "focalLengthMaxFxMm": 30,
+              "maxAperture": 4.0,
+              "weightG": 485,
+              "priceJpy": 184800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "z-100-400-4.5-5.6-vr-s",
+              "name": "Z 100-400mm f/4.5-5.6 VR S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 4.5,
+              "weightG": 1350,
+              "priceJpy": 385000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-6",
+          "lenses": [
+            {
+              "id": "z-24-70-4-s",
+              "name": "Z 24-70mm f/4 S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 4.0,
+              "weightG": 500,
+              "priceJpy": 134750,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-7",
+          "lenses": [
+            {
+              "id": "z-24-120-4-s",
+              "name": "Z 24-120mm f/4 S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 120,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 120,
+              "maxAperture": 4.0,
+              "weightG": 630,
+              "priceJpy": 154000,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-pz",
+          "lenses": [
+            {
+              "id": "z-28-135-4-pz",
+              "name": "Z 28-135mm f/4 PZ",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 135,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 135,
+              "maxAperture": 4.0,
+              "weightG": 1100,
+              "priceJpy": 311538,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-8",
+          "lenses": [
+            {
+              "id": "z-24-50-4-6.3",
+              "name": "Z 24-50mm f/4-6.3",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 4.0,
+              "weightG": 195,
+              "priceJpy": 52800,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-9",
+          "lenses": [
+            {
+              "id": "z-24-105-4-7.1",
+              "name": "Z 24-105mm f/4-7.1",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 4.0,
+              "weightG": 350,
+              "priceJpy": 90200,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-10",
+          "lenses": [
+            {
+              "id": "z-24-200-4-6.3-vr",
+              "name": "Z 24-200mm f/4-6.3 VR",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 4.0,
+              "weightG": 570,
+              "priceJpy": 96279,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-11",
+          "lenses": [
+            {
+              "id": "z-28-400-4-8-vr",
+              "name": "Z 28-400mm f/4-8 VR",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 4.0,
+              "weightG": 725,
+              "priceJpy": 188000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-3-dx",
+          "lenses": [
+            {
+              "id": "z-dx-16-50-2.8-vr",
+              "name": "Z DX 16-50mm f/2.8 VR",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 2.8,
+              "weightG": 330,
+              "priceJpy": 115500,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-dx-kit",
+          "lenses": [
+            {
+              "id": "z-dx-50-250-4.5-6.3-vr",
+              "name": "Z DX 50-250mm f/4.5-6.3 VR",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 50,
+              "focalLengthMaxMm": 250,
+              "focalLengthMinFxMm": 50,
+              "focalLengthMaxFxMm": 250,
+              "maxAperture": 4.5,
+              "weightG": 405,
+              "priceJpy": 50600,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            },
+            {
+              "id": "z-dx-16-50-3.5-6.3-vr",
+              "name": "Z DX 16-50mm f/3.5-6.3 VR",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 3.5,
+              "weightG": 131,
+              "priceJpy": 41800,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-13-dx",
+          "lenses": [
+            {
+              "id": "z-dx-18-140-3.5-6.3-vr",
+              "name": "Z DX 18-140mm f/3.5-6.3 VR",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 140,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 140,
+              "maxAperture": 3.5,
+              "weightG": 315,
+              "priceJpy": 81400,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-5-dx-pz",
+          "lenses": [
+            {
+              "id": "z-dx-12-28-3.5-5.6-pz-vr",
+              "name": "Z DX 12-28mm f/3.5-5.6 PZ VR",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 12,
+              "focalLengthMaxMm": 28,
+              "focalLengthMinFxMm": 12,
+              "focalLengthMaxFxMm": 28,
+              "maxAperture": 3.5,
+              "weightG": 205,
+              "priceJpy": 53900,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamron",
+      "label": "タムロン",
+      "rows": [
+        {
+          "id": "tamron-row-prime",
+          "lenses": [
+            {
+              "id": "tamron-90-2.8-macro",
+              "name": "90mm F/2.8 Di III MACRO VXD",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 90,
+              "focalLengthFxMm": 90,
+              "maxAperture": 2.8,
+              "weightG": 640,
+              "priceJpy": 102469,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-0",
+          "lenses": [
+            {
+              "id": "tamron-35-150-2-2.8",
+              "name": "35-150mm F/2-2.8 Di III VXD",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 35,
+              "focalLengthMaxMm": 150,
+              "focalLengthMinFxMm": 35,
+              "focalLengthMaxFxMm": 150,
+              "maxAperture": 2.0,
+              "weightG": 1190,
+              "priceJpy": 177629,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-1",
+          "lenses": [
+            {
+              "id": "tamron-16-30-2.8",
+              "name": "16-30mm F/2.8 Di III VXD G2",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 30,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 30,
+              "maxAperture": 2.8,
+              "weightG": 450,
+              "priceJpy": 119399,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "tamron-70-180-2.8",
+              "name": "70-180mm F/2.8 Di III VC VXD G2",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 180,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 180,
+              "maxAperture": 2.8,
+              "weightG": 865,
+              "priceJpy": 127845,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-2",
+          "lenses": [
+            {
+              "id": "tamron-28-75-2.8",
+              "name": "28-75mm F/2.8 Di III VXD G2",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 75,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 75,
+              "maxAperture": 2.8,
+              "weightG": 550,
+              "priceJpy": 93980,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-3",
+          "lenses": [
+            {
+              "id": "tamron-35-100-2.8",
+              "name": "35-100mm F/2.8 Di III VXD",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 35,
+              "focalLengthMaxMm": 100,
+              "focalLengthMinFxMm": 35,
+              "focalLengthMaxFxMm": 100,
+              "maxAperture": 2.8,
+              "weightG": 575,
+              "priceJpy": 138600,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-4",
+          "lenses": [
+            {
+              "id": "tamron-50-400-4.5-6.3",
+              "name": "50-400mm F/4.5-6.3 Di III VC VXD",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 50,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 50,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 4.5,
+              "weightG": 1180,
+              "priceJpy": 153898,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-5",
+          "lenses": [
+            {
+              "id": "tamron-70-300-4.5-6.3",
+              "name": "70-300mm F/4.5-6.3 Di III RXD",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 4.5,
+              "weightG": 580,
+              "priceJpy": 58139,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-6",
+          "lenses": [
+            {
+              "id": "tamron-150-500-5-6.7",
+              "name": "150-500mm F/5-6.7 Di III VC VXD",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 150,
+              "focalLengthMaxMm": 500,
+              "focalLengthMinFxMm": 150,
+              "focalLengthMaxFxMm": 500,
+              "maxAperture": 5.0,
+              "weightG": 1720,
+              "priceJpy": 146000,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-dx",
+          "lenses": [
+            {
+              "id": "tamron-18-300-3.5-6.3-dx",
+              "name": "18-300mm F/3.5-6.3 Di III-A VC VXD",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 3.5,
+              "weightG": 635,
+              "priceJpy": 70977,
+              "rentalAvailable": null,
+              "imageStabilization": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sigma",
+      "label": "シグマ",
+      "rows": [
+        {
+          "id": "sigma-row-dx",
+          "lenses": [
+            {
+              "id": "sigma-16-1.4-dc-dn",
+              "name": "16mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 16,
+              "focalLengthFxMm": 16,
+              "maxAperture": 1.4,
+              "weightG": 420,
+              "priceJpy": 62370,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "sigma-30-1.4-dc-dn",
+              "name": "30mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 30,
+              "focalLengthFxMm": 30,
+              "maxAperture": 1.4,
+              "weightG": 285,
+              "priceJpy": 49010,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            },
+            {
+              "id": "sigma-56-1.4-dc-dn",
+              "name": "56mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 56,
+              "focalLengthFxMm": 56,
+              "maxAperture": 1.4,
+              "weightG": 295,
+              "priceJpy": 44394,
+              "rentalAvailable": null,
+              "imageStabilization": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

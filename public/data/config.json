@@ -1,0 +1,169 @@
+{
+  "focalLengthMarkers": [
+    {
+      "fxMm": 0,
+      "dxMm": 0,
+      "spacingToNext": 40
+    },
+    {
+      "fxMm": 12,
+      "dxMm": 18,
+      "spacingToNext": 100
+    },
+    {
+      "fxMm": 24,
+      "dxMm": 36,
+      "spacingToNext": 105
+    },
+    {
+      "fxMm": 35,
+      "dxMm": 52,
+      "spacingToNext": 100
+    },
+    {
+      "fxMm": 50,
+      "dxMm": 75,
+      "spacingToNext": 85
+    },
+    {
+      "fxMm": 70,
+      "dxMm": 105,
+      "spacingToNext": 80
+    },
+    {
+      "fxMm": 85,
+      "dxMm": 128,
+      "spacingToNext": 120
+    },
+    {
+      "fxMm": 135,
+      "dxMm": 203,
+      "spacingToNext": 85
+    },
+    {
+      "fxMm": 200,
+      "dxMm": 300,
+      "spacingToNext": 90
+    },
+    {
+      "fxMm": 300,
+      "dxMm": 450,
+      "spacingToNext": 95
+    },
+    {
+      "fxMm": 400,
+      "dxMm": 600,
+      "spacingToNext": 120
+    },
+    {
+      "fxMm": 600,
+      "dxMm": 900,
+      "spacingToNext": 120
+    },
+    {
+      "fxMm": 800,
+      "dxMm": 1200,
+      "spacingToNext": 0
+    }
+  ],
+  "rightPaddingPx": 120,
+  "sectionLabelWidthPx": 44,
+  "rowBaseHeightPx": 78,
+  "attributeRowHeightPx": 16,
+  "primeDotDiameterPx": 14,
+  "zoomBarHeightPx": 14,
+  "zoomBarBorderRadiusPx": 5,
+  "colors": {
+    "headerBackground": "#1a1a1a",
+    "headerText": "#ffffff",
+    "sectionLabelBackground": "#2c2c2c",
+    "sectionLabelText": "#ffffff",
+    "rowBackground": "#dcdcdc",
+    "gridLineColor": "#ffffff",
+    "sectionDividerColor": "#ffffff",
+    "lensDot": "#2211cc",
+    "zoomBar": "#2211cc",
+    "lensNameText": "#111111",
+    "attributeText": "#555555"
+  },
+  "typography": {
+    "lensNameFontSizePx": 10,
+    "attributeFontSizePx": 9,
+    "headerFontSizePx": 11
+  },
+  "displayAttributes": [
+    {
+      "key": "weightG",
+      "label": "重さ",
+      "unit": "g",
+      "format": "number"
+    },
+    {
+      "key": "priceJpy",
+      "label": "価格",
+      "unit": "円",
+      "format": "number"
+    },
+    {
+      "key": "rentalAvailable",
+      "label": "レンタル",
+      "unit": "",
+      "format": "boolean"
+    }
+  ],
+  "filters": [
+    {
+      "key": "focalLength",
+      "label": "焦点距離",
+      "type": "range",
+      "unit": "mm",
+      "min": 12,
+      "max": 800
+    },
+    {
+      "key": "maxAperture",
+      "label": "最大絞り",
+      "type": "select",
+      "options": [
+        0.95,
+        1.2,
+        1.4,
+        1.7,
+        1.8,
+        2.0,
+        2.8,
+        3.5,
+        4.0,
+        4.5,
+        5.6,
+        6.3
+      ]
+    },
+    {
+      "key": "priceJpy",
+      "label": "価格",
+      "type": "range",
+      "unit": "円",
+      "step": 10000
+    },
+    {
+      "key": "rentalAvailable",
+      "label": "レンタル可",
+      "type": "toggle"
+    },
+    {
+      "key": "format",
+      "label": "フォーマット",
+      "type": "select",
+      "options": [
+        "FX",
+        "DX"
+      ]
+    },
+    {
+      "key": "imageStabilization",
+      "label": "手ぶれ補正",
+      "type": "toggle"
+    }
+  ]
+}
