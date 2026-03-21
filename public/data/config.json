@@ -164,6 +164,12 @@
       "key": "imageStabilization",
       "label": "手ぶれ補正",
       "type": "toggle"
+    },
+    {
+      "key": "manufacturer",
+      "label": "メーカー",
+      "type": "select",
+      "options": ["ニコン", "タムロン", "シグマ"]
     }
   ]
 }

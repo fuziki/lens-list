@@ -83,6 +83,7 @@ export interface PrimeLens {
   id: string;
   name: string;
   type: 'prime';
+  manufacturer: string;
   format: 'FX' | 'DX';
   focalLengthMm: number;
   focalLengthFxMm: number;
@@ -97,6 +98,7 @@ export interface ZoomLens {
   id: string;
   name: string;
   type: 'zoom';
+  manufacturer: string;
   format: 'FX' | 'DX';
   focalLengthMinMm: number;
   focalLengthMaxMm: number;

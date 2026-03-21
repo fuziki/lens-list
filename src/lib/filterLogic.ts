@@ -35,6 +35,8 @@ export function lensMatchesFilters(
         if (lens.maxAperture > Number(state)) return false;
       } else if (f.key === 'format') {
         if (lens.format !== state) return false;
+      } else if (f.key === 'manufacturer') {
+        if (lens.manufacturer !== state) return false;
       }
     } else if (f.type === 'toggle') {
       const key = f.key as keyof Lens;
@@ -72,6 +74,7 @@ export function buildChips(filterState: FilterState, filters: FilterConfig[]): F
       if (state !== 'all' && state !== null) {
         if (f.key === 'maxAperture') label = f.label + ': f/' + state + '以下';
         else if (f.key === 'format') label = 'フォーマット: ' + (state === 'FX' ? 'FX対応' : 'DX専用');
+        else if (f.key === 'manufacturer') label = 'メーカー: ' + state;
         else label = f.label + ': ' + state;
       }
     } else if (f.type === 'toggle') {
