@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21",
+  "lastUpdated": "2026-03-25",
   "sections": [
     {
       "id": "prime",
@@ -481,7 +481,7 @@
               "focalLengthMaxFxMm": 75,
               "maxAperture": 2.8,
               "weightG": 565,
-              "priceJpy": 104380,
+              "priceJpy": 126500,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "ニコン"
@@ -502,7 +502,7 @@
               "focalLengthMaxFxMm": 180,
               "maxAperture": 2.8,
               "weightG": 795,
-              "priceJpy": 145700,
+              "priceJpy": 181500,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "ニコン"
@@ -518,7 +518,7 @@
               "focalLengthMaxFxMm": 600,
               "maxAperture": 5.6,
               "weightG": 1460,
-              "priceJpy": 229000,
+              "priceJpy": 277200,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "ニコン"
@@ -618,7 +618,7 @@
               "focalLengthMaxFxMm": 135,
               "maxAperture": 4.0,
               "weightG": 1100,
-              "priceJpy": 311538,
+              "priceJpy": 368500,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "ニコン"
@@ -681,7 +681,7 @@
               "focalLengthMaxFxMm": 200,
               "maxAperture": 4.0,
               "weightG": 570,
-              "priceJpy": 96279,
+              "priceJpy": 125400,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "ニコン"
@@ -702,7 +702,7 @@
               "focalLengthMaxFxMm": 400,
               "maxAperture": 4.0,
               "weightG": 725,
-              "priceJpy": 188000,
+              "priceJpy": 222200,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "ニコン"
@@ -827,7 +827,7 @@
               "focalLengthFxMm": 90,
               "maxAperture": 2.8,
               "weightG": 640,
-              "priceJpy": 102469,
+              "priceJpy": 114400,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -848,7 +848,7 @@
               "focalLengthMaxFxMm": 150,
               "maxAperture": 2.0,
               "weightG": 1190,
-              "priceJpy": 177629,
+              "priceJpy": 225500,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -869,7 +869,7 @@
               "focalLengthMaxFxMm": 30,
               "maxAperture": 2.8,
               "weightG": 450,
-              "priceJpy": 119399,
+              "priceJpy": 143000,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -885,7 +885,7 @@
               "focalLengthMaxFxMm": 180,
               "maxAperture": 2.8,
               "weightG": 865,
-              "priceJpy": 127845,
+              "priceJpy": 176000,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "タムロン"
@@ -906,7 +906,7 @@
               "focalLengthMaxFxMm": 75,
               "maxAperture": 2.8,
               "weightG": 550,
-              "priceJpy": 93980,
+              "priceJpy": 125400,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -927,7 +927,7 @@
               "focalLengthMaxFxMm": 100,
               "maxAperture": 2.8,
               "weightG": 575,
-              "priceJpy": 138600,
+              "priceJpy": 154000,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -948,7 +948,7 @@
               "focalLengthMaxFxMm": 400,
               "maxAperture": 4.5,
               "weightG": 1180,
-              "priceJpy": 153898,
+              "priceJpy": 187000,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "タムロン"
@@ -969,7 +969,7 @@
               "focalLengthMaxFxMm": 300,
               "maxAperture": 4.5,
               "weightG": 580,
-              "priceJpy": 58139,
+              "priceJpy": 77800,
               "rentalAvailable": null,
               "imageStabilization": false,
               "manufacturer": "タムロン"
@@ -990,7 +990,7 @@
               "focalLengthMaxFxMm": 500,
               "maxAperture": 5.0,
               "weightG": 1720,
-              "priceJpy": 146000,
+              "priceJpy": 174900,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "タムロン"
@@ -1011,7 +1011,7 @@
               "focalLengthMaxFxMm": 300,
               "maxAperture": 3.5,
               "weightG": 635,
-              "priceJpy": 70977,
+              "priceJpy": 90200,
               "rentalAvailable": null,
               "imageStabilization": true,
               "manufacturer": "タムロン"
