@@ -28,8 +28,22 @@ export function App() {
 }
 
 function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData }) {
-  const geometry = useMemo(() => buildGeometry(config), [config]);
-  const { activeAttributes, toggleAttribute, rowHeight } = useActiveAttributes(config);
+  const showRental = useMemo(
+    () => new URLSearchParams(window.location.search).get('show_rental') === '1',
+    []
+  );
+
+  const effectiveConfig = useMemo(() => {
+    if (showRental) return config;
+    return {
+      ...config,
+      filters: config.filters.filter(f => f.key !== 'rentalAvailable'),
+      displayAttributes: config.displayAttributes.filter(a => a.key !== 'rentalAvailable'),
+    };
+  }, [config, showRental]);
+
+  const geometry = useMemo(() => buildGeometry(effectiveConfig), [effectiveConfig]);
+  const { activeAttributes, toggleAttribute, rowHeight } = useActiveAttributes(effectiveConfig);
   const {
     filterState,
     setFilterValue,
@@ -37,7 +51,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
     filterPanelOpen,
     setFilterPanelOpen,
     activeChips,
-  } = useFilterState(config, lensData);
+  } = useFilterState(effectiveConfig, lensData);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -56,7 +70,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
   return (
     <div id="app" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <Controls
-        config={config}
+        config={effectiveConfig}
         activeAttributes={activeAttributes}
         onToggleAttribute={toggleAttribute}
         filterState={filterState}
@@ -66,7 +80,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
       />
       <ChipBar chips={activeChips} onRemove={resetFilter} />
       <TableWrapper
-        config={config}
+        config={effectiveConfig}
         geometry={geometry}
         lensData={lensData}
         filterState={filterState}
