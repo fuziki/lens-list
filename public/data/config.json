@@ -108,7 +108,7 @@
       "key": "rentalAvailable",
       "label": "レンタル",
       "unit": "",
-      "format": "boolean"
+      "format": "rental"
     }
   ],
   "filters": [

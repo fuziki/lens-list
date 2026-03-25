@@ -18,7 +18,7 @@
               "maxAperture": 0.95,
               "weightG": 2000,
               "priceJpy": 1138500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -32,7 +32,7 @@
               "maxAperture": 2.8,
               "weightG": 2950,
               "priceJpy": 1809500,
-              "rentalAvailable": null,
+              "rentalAvailable": 23200,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -51,7 +51,7 @@
               "maxAperture": 1.2,
               "weightG": 1060,
               "priceJpy": 437800,
-              "rentalAvailable": null,
+              "rentalAvailable": 4800,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -65,7 +65,7 @@
               "maxAperture": 1.2,
               "weightG": 1090,
               "priceJpy": 308000,
-              "rentalAvailable": null,
+              "rentalAvailable": 3500,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -79,7 +79,7 @@
               "maxAperture": 1.2,
               "weightG": 1160,
               "priceJpy": 404800,
-              "rentalAvailable": null,
+              "rentalAvailable": 5900,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -93,7 +93,7 @@
               "maxAperture": 4.5,
               "weightG": 1160,
               "priceJpy": 496100,
-              "rentalAvailable": null,
+              "rentalAvailable": 7900,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             },
@@ -107,7 +107,7 @@
               "maxAperture": 4.0,
               "weightG": 3260,
               "priceJpy": 2189000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -126,7 +126,7 @@
               "maxAperture": 1.4,
               "weightG": 415,
               "priceJpy": 104500,
-              "rentalAvailable": null,
+              "rentalAvailable": 2200,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -140,7 +140,7 @@
               "maxAperture": 1.4,
               "weightG": 420,
               "priceJpy": 81400,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -154,7 +154,7 @@
               "maxAperture": 6.3,
               "weightG": 1390,
               "priceJpy": 792000,
-              "rentalAvailable": null,
+              "rentalAvailable": 19800,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             },
@@ -168,7 +168,7 @@
               "maxAperture": 6.3,
               "weightG": 2385,
               "priceJpy": 962500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -187,7 +187,7 @@
               "maxAperture": 1.8,
               "weightG": 450,
               "priceJpy": 150700,
-              "rentalAvailable": null,
+              "rentalAvailable": 2600,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -201,7 +201,7 @@
               "maxAperture": 1.8,
               "weightG": 370,
               "priceJpy": 125400,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -215,7 +215,7 @@
               "maxAperture": 1.8,
               "weightG": 415,
               "priceJpy": 91300,
-              "rentalAvailable": null,
+              "rentalAvailable": 1700,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -229,7 +229,7 @@
               "maxAperture": 1.8,
               "weightG": 470,
               "priceJpy": 118800,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -243,7 +243,7 @@
               "maxAperture": 1.8,
               "weightG": 995,
               "priceJpy": 399300,
-              "rentalAvailable": null,
+              "rentalAvailable": 6600,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -262,7 +262,7 @@
               "maxAperture": 1.8,
               "weightG": 505,
               "priceJpy": 157300,
-              "rentalAvailable": null,
+              "rentalAvailable": 2000,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -276,7 +276,7 @@
               "maxAperture": 2.8,
               "weightG": 630,
               "priceJpy": 143000,
-              "rentalAvailable": null,
+              "rentalAvailable": 3000,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             },
@@ -290,7 +290,7 @@
               "maxAperture": 2.8,
               "weightG": 260,
               "priceJpy": 93500,
-              "rentalAvailable": null,
+              "rentalAvailable": 1600,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -309,7 +309,7 @@
               "maxAperture": 1.7,
               "weightG": 220,
               "priceJpy": 64900,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -334,7 +334,7 @@
               "maxAperture": 2.8,
               "weightG": 125,
               "priceJpy": 72600,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -353,7 +353,7 @@
               "maxAperture": 2.8,
               "weightG": 155,
               "priceJpy": 36300,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -367,7 +367,7 @@
               "maxAperture": 2.0,
               "weightG": 170,
               "priceJpy": 36300,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -386,7 +386,7 @@
               "maxAperture": 1.7,
               "weightG": 135,
               "priceJpy": 40700,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -413,7 +413,7 @@
               "maxAperture": 2.8,
               "weightG": 650,
               "priceJpy": 348700,
-              "rentalAvailable": null,
+              "rentalAvailable": 4301,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -429,7 +429,7 @@
               "maxAperture": 2.8,
               "weightG": 675,
               "priceJpy": 371800,
-              "rentalAvailable": null,
+              "rentalAvailable": 8400,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -445,7 +445,7 @@
               "maxAperture": 2.8,
               "weightG": 998,
               "priceJpy": 443300,
-              "rentalAvailable": null,
+              "rentalAvailable": 4200,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -466,7 +466,7 @@
               "maxAperture": 2.8,
               "weightG": 450,
               "priceJpy": 165000,
-              "rentalAvailable": null,
+              "rentalAvailable": 3000,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -482,7 +482,7 @@
               "maxAperture": 2.8,
               "weightG": 565,
               "priceJpy": 126500,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -503,7 +503,7 @@
               "maxAperture": 2.8,
               "weightG": 795,
               "priceJpy": 181500,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -519,7 +519,7 @@
               "maxAperture": 5.6,
               "weightG": 1460,
               "priceJpy": 277200,
-              "rentalAvailable": null,
+              "rentalAvailable": 5500,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -540,7 +540,7 @@
               "maxAperture": 4.0,
               "weightG": 485,
               "priceJpy": 184800,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             },
@@ -556,7 +556,7 @@
               "maxAperture": 4.5,
               "weightG": 1350,
               "priceJpy": 385000,
-              "rentalAvailable": null,
+              "rentalAvailable": 4900,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -577,7 +577,7 @@
               "maxAperture": 4.0,
               "weightG": 500,
               "priceJpy": 134750,
-              "rentalAvailable": null,
+              "rentalAvailable": 2600,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -598,7 +598,7 @@
               "maxAperture": 4.0,
               "weightG": 630,
               "priceJpy": 154000,
-              "rentalAvailable": null,
+              "rentalAvailable": 2600,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -619,7 +619,7 @@
               "maxAperture": 4.0,
               "weightG": 1100,
               "priceJpy": 368500,
-              "rentalAvailable": null,
+              "rentalAvailable": 5500,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -640,7 +640,7 @@
               "maxAperture": 4.0,
               "weightG": 195,
               "priceJpy": 52800,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -661,7 +661,7 @@
               "maxAperture": 4.0,
               "weightG": 350,
               "priceJpy": 90200,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "ニコン"
             }
@@ -682,7 +682,7 @@
               "maxAperture": 4.0,
               "weightG": 570,
               "priceJpy": 125400,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -703,7 +703,7 @@
               "maxAperture": 4.0,
               "weightG": 725,
               "priceJpy": 222200,
-              "rentalAvailable": null,
+              "rentalAvailable": 3700,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -724,7 +724,7 @@
               "maxAperture": 2.8,
               "weightG": 330,
               "priceJpy": 115500,
-              "rentalAvailable": null,
+              "rentalAvailable": 3600,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -745,7 +745,7 @@
               "maxAperture": 4.5,
               "weightG": 405,
               "priceJpy": 50600,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             },
@@ -761,7 +761,7 @@
               "maxAperture": 3.5,
               "weightG": 131,
               "priceJpy": 41800,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -782,7 +782,7 @@
               "maxAperture": 3.5,
               "weightG": 315,
               "priceJpy": 81400,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -803,7 +803,7 @@
               "maxAperture": 3.5,
               "weightG": 205,
               "priceJpy": 53900,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "ニコン"
             }
@@ -828,7 +828,7 @@
               "maxAperture": 2.8,
               "weightG": 640,
               "priceJpy": 114400,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -849,7 +849,7 @@
               "maxAperture": 2.0,
               "weightG": 1190,
               "priceJpy": 225500,
-              "rentalAvailable": null,
+              "rentalAvailable": 4400,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -870,7 +870,7 @@
               "maxAperture": 2.8,
               "weightG": 450,
               "priceJpy": 143000,
-              "rentalAvailable": null,
+              "rentalAvailable": 2600,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             },
@@ -886,7 +886,7 @@
               "maxAperture": 2.8,
               "weightG": 865,
               "priceJpy": 176000,
-              "rentalAvailable": null,
+              "rentalAvailable": 2400,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -907,7 +907,7 @@
               "maxAperture": 2.8,
               "weightG": 550,
               "priceJpy": 125400,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -928,7 +928,7 @@
               "maxAperture": 2.8,
               "weightG": 575,
               "priceJpy": 154000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -949,7 +949,7 @@
               "maxAperture": 4.5,
               "weightG": 1180,
               "priceJpy": 187000,
-              "rentalAvailable": null,
+              "rentalAvailable": 4900,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -970,7 +970,7 @@
               "maxAperture": 4.5,
               "weightG": 580,
               "priceJpy": 77800,
-              "rentalAvailable": null,
+              "rentalAvailable": 3000,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -991,7 +991,7 @@
               "maxAperture": 5.0,
               "weightG": 1720,
               "priceJpy": 174900,
-              "rentalAvailable": null,
+              "rentalAvailable": 4200,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -1012,7 +1012,7 @@
               "maxAperture": 3.5,
               "weightG": 635,
               "priceJpy": 90200,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -1037,7 +1037,7 @@
               "maxAperture": 1.4,
               "weightG": 420,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             },
@@ -1051,7 +1051,7 @@
               "maxAperture": 1.4,
               "weightG": 285,
               "priceJpy": 55000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             },
@@ -1065,7 +1065,7 @@
               "maxAperture": 1.4,
               "weightG": 295,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
