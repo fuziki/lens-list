@@ -105,6 +105,12 @@
       "format": "number"
     },
     {
+      "key": "campaignCashbackJpy",
+      "label": "キャンペーン（2026春）",
+      "unit": "",
+      "format": "campaign"
+    },
+    {
       "key": "rentalAvailable",
       "label": "レンタル",
       "unit": "",

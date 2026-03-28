@@ -9,6 +9,13 @@ export function formatAttributeValue(lens: Lens, attr: DisplayAttributeConfig): 
     return Number(val).toLocaleString() + '円/泊';
   }
 
+  if (attr.format === 'campaign') {
+    if (typeof val === 'number') {
+      return 'CB: ' + val.toLocaleString() + '円';
+    }
+    return '×';
+  }
+
   if (val == null) return '—';
 
   if (attr.format === 'boolean') {

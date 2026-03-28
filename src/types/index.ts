@@ -32,7 +32,7 @@ export interface DisplayAttributeConfig {
   key: string;
   label: string;
   unit: string;
-  format: 'number' | 'boolean' | 'string' | 'rental';
+  format: 'number' | 'boolean' | 'string' | 'rental' | 'campaign';
 }
 
 export interface RangeFilterConfig {
@@ -90,6 +90,7 @@ export interface PrimeLens {
   maxAperture: number;
   weightG: number | null;
   priceJpy: number | null;
+  campaignCashbackJpy?: number | false;
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
   sLine?: boolean;
@@ -108,6 +109,7 @@ export interface ZoomLens {
   maxAperture: number;
   weightG: number | null;
   priceJpy: number | null;
+  campaignCashbackJpy?: number | false;
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
   sLine?: boolean;
