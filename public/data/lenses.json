@@ -20,7 +20,8 @@
               "priceJpy": 1138500,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-400-2.8-tc-vr-s",
@@ -34,7 +35,8 @@
               "priceJpy": 1809500,
               "rentalAvailable": 23200,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -53,7 +55,8 @@
               "priceJpy": 437800,
               "rentalAvailable": 4800,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-50-1.2-s",
@@ -67,7 +70,8 @@
               "priceJpy": 308000,
               "rentalAvailable": 3500,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-85-1.2-s",
@@ -81,7 +85,8 @@
               "priceJpy": 404800,
               "rentalAvailable": 5900,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-400-4.5-vr-s",
@@ -95,7 +100,8 @@
               "priceJpy": 496100,
               "rentalAvailable": 7900,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-600-4-tc-vr-s",
@@ -109,7 +115,8 @@
               "priceJpy": 2189000,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -128,7 +135,8 @@
               "priceJpy": 104500,
               "rentalAvailable": 2200,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-50-1.4",
@@ -142,7 +150,8 @@
               "priceJpy": 81400,
               "rentalAvailable": 1300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-600-6.3-vr-s",
@@ -156,7 +165,8 @@
               "priceJpy": 792000,
               "rentalAvailable": 19800,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-800-6.3-vr-s",
@@ -170,7 +180,8 @@
               "priceJpy": 962500,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -189,7 +200,8 @@
               "priceJpy": 150700,
               "rentalAvailable": 2600,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-35-1.8-s",
@@ -203,7 +215,8 @@
               "priceJpy": 125400,
               "rentalAvailable": 2300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-50-1.8-s",
@@ -217,7 +230,8 @@
               "priceJpy": 91300,
               "rentalAvailable": 1700,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-85-1.8-s",
@@ -231,7 +245,8 @@
               "priceJpy": 118800,
               "rentalAvailable": 2300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-135-1.8-s-plena",
@@ -245,7 +260,8 @@
               "priceJpy": 399300,
               "rentalAvailable": 6600,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -264,7 +280,8 @@
               "priceJpy": 157300,
               "rentalAvailable": 2000,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-mc-105-2.8-vr-s",
@@ -278,7 +295,8 @@
               "priceJpy": 143000,
               "rentalAvailable": 3000,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-mc-50-2.8",
@@ -292,7 +310,8 @@
               "priceJpy": 93500,
               "rentalAvailable": 1600,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -311,7 +330,8 @@
               "priceJpy": 64900,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         }
@@ -336,7 +356,8 @@
               "priceJpy": 72600,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -355,7 +376,8 @@
               "priceJpy": 36300,
               "rentalAvailable": 1300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-40-2",
@@ -369,7 +391,8 @@
               "priceJpy": 36300,
               "rentalAvailable": 1300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -388,7 +411,8 @@
               "priceJpy": 40700,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         }
@@ -415,7 +439,8 @@
               "priceJpy": 348700,
               "rentalAvailable": 4301,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-24-70-2.8-s-ii",
@@ -431,7 +456,8 @@
               "priceJpy": 371800,
               "rentalAvailable": 8400,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-70-200-2.8-vr-s-ii",
@@ -447,7 +473,8 @@
               "priceJpy": 443300,
               "rentalAvailable": 4200,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -468,7 +495,8 @@
               "priceJpy": 165000,
               "rentalAvailable": 3000,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-28-75-2.8",
@@ -484,7 +512,8 @@
               "priceJpy": 126500,
               "rentalAvailable": 2300,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -505,7 +534,8 @@
               "priceJpy": 181500,
               "rentalAvailable": 3400,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-180-600-5.6-6.3-vr",
@@ -521,7 +551,8 @@
               "priceJpy": 277200,
               "rentalAvailable": 5500,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -542,7 +573,8 @@
               "priceJpy": 184800,
               "rentalAvailable": 3400,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             },
             {
               "id": "z-100-400-4.5-5.6-vr-s",
@@ -558,7 +590,8 @@
               "priceJpy": 385000,
               "rentalAvailable": 4900,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -579,7 +612,8 @@
               "priceJpy": 134750,
               "rentalAvailable": 2600,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -600,7 +634,8 @@
               "priceJpy": 154000,
               "rentalAvailable": 2600,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
@@ -621,7 +656,8 @@
               "priceJpy": 368500,
               "rentalAvailable": 5500,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -642,7 +678,8 @@
               "priceJpy": 52800,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -663,7 +700,8 @@
               "priceJpy": 90200,
               "rentalAvailable": false,
               "imageStabilization": false,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -684,7 +722,8 @@
               "priceJpy": 125400,
               "rentalAvailable": 2300,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -705,7 +744,8 @@
               "priceJpy": 222200,
               "rentalAvailable": 3700,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -726,7 +766,8 @@
               "priceJpy": 115500,
               "rentalAvailable": 3600,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -747,7 +788,8 @@
               "priceJpy": 50600,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             },
             {
               "id": "z-dx-16-50-3.5-6.3-vr",
@@ -763,7 +805,8 @@
               "priceJpy": 41800,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -784,7 +827,8 @@
               "priceJpy": 81400,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         },
@@ -805,7 +849,8 @@
               "priceJpy": 53900,
               "rentalAvailable": false,
               "imageStabilization": true,
-              "manufacturer": "ニコン"
+              "manufacturer": "ニコン",
+              "sLine": false
             }
           ]
         }

@@ -170,6 +170,11 @@
       "label": "メーカー",
       "type": "select",
       "options": ["ニコン", "タムロン", "シグマ"]
+    },
+    {
+      "key": "sLine",
+      "label": "Sライン",
+      "type": "toggle"
     }
   ]
 }

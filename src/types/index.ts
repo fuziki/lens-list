@@ -92,6 +92,7 @@ export interface PrimeLens {
   priceJpy: number | null;
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
+  sLine?: boolean;
 }
 
 export interface ZoomLens {
@@ -109,6 +110,7 @@ export interface ZoomLens {
   priceJpy: number | null;
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
+  sLine?: boolean;
 }
 
 export type Lens = PrimeLens | ZoomLens;
