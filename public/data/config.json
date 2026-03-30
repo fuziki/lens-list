@@ -8,37 +8,37 @@
     {
       "fxMm": 12,
       "dxMm": 18,
-      "spacingToNext": 100
+      "spacingToNext": 80
     },
     {
       "fxMm": 24,
       "dxMm": 36,
-      "spacingToNext": 105
+      "spacingToNext": 140
     },
     {
       "fxMm": 35,
       "dxMm": 52,
-      "spacingToNext": 100
+      "spacingToNext": 140
     },
     {
       "fxMm": 50,
       "dxMm": 75,
-      "spacingToNext": 85
+      "spacingToNext": 140
     },
     {
       "fxMm": 70,
       "dxMm": 105,
-      "spacingToNext": 80
+      "spacingToNext": 70
     },
     {
       "fxMm": 85,
       "dxMm": 128,
-      "spacingToNext": 120
+      "spacingToNext": 160
     },
     {
       "fxMm": 135,
       "dxMm": 203,
-      "spacingToNext": 85
+      "spacingToNext": 70
     },
     {
       "fxMm": 200,
@@ -48,17 +48,17 @@
     {
       "fxMm": 300,
       "dxMm": 450,
-      "spacingToNext": 95
+      "spacingToNext": 90
     },
     {
       "fxMm": 400,
       "dxMm": 600,
-      "spacingToNext": 120
+      "spacingToNext": 180
     },
     {
       "fxMm": 600,
       "dxMm": 900,
-      "spacingToNext": 120
+      "spacingToNext": 180
     },
     {
       "fxMm": 800,
@@ -69,7 +69,7 @@
   "rightPaddingPx": 120,
   "sectionLabelWidthPx": 44,
   "rowBaseHeightPx": 78,
-  "attributeRowHeightPx": 16,
+  "attributeRowHeightPx": 18,
   "primeDotDiameterPx": 14,
   "zoomBarHeightPx": 14,
   "zoomBarBorderRadiusPx": 5,
@@ -87,8 +87,8 @@
     "attributeText": "#555555"
   },
   "typography": {
-    "lensNameFontSizePx": 10,
-    "attributeFontSizePx": 9,
+    "lensNameFontSizePx": 12,
+    "attributeFontSizePx": 11.5,
     "headerFontSizePx": 11
   },
   "displayAttributes": [

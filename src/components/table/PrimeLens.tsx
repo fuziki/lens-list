@@ -32,7 +32,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
       >
         <div
           className="lens-name"
-          style={{ fontSize: config.typography.lensNameFontSizePx }}
+          style={{ fontSize: config.typography.lensNameFontSizePx, fontWeight: 'bold' }}
         >
           {lens.name}
         </div>
@@ -42,7 +42,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
             <div
               key={attr.key}
               className="lens-attr"
-              style={{ fontSize: config.typography.attributeFontSizePx }}
+              style={{ fontSize: config.typography.attributeFontSizePx, lineHeight: `${config.attributeRowHeightPx}px` }}
             >
               {formatAttributeValue(lens, attr)}
             </div>
