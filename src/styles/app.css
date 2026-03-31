@@ -351,13 +351,42 @@
   border-radius: 50%;
   margin: 0 auto;
   flex-shrink: 0;
-  background: var(--color-lens-dot, #2211cc);
+  background: var(--color-lens-dot, #2563eb);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.45), 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
 .zoom-bar {
   width: 100%;
   flex-shrink: 0;
-  background: var(--color-zoom-bar, #2211cc);
+  background: var(--color-zoom-bar, #2563eb);
+  box-shadow: 0 2px 5px rgba(37, 99, 235, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-bar::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  right: 6px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+/* PrimeLens text box */
+.lens-text-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ZoomLens text content */
+.lens-text-content {
+  margin-top: 4px;
 }
 
 .lens-name {
@@ -377,5 +406,5 @@
 
 .section + .section .section-label,
 .section + .section .section-rows {
-  border-top: 2px solid #ffffff;
+  border-top: 5px solid rgba(30, 41, 59, 0.6);
 }

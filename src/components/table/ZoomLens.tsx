@@ -9,12 +9,12 @@ interface Props {
   activeAttributes: ReadonlySet<string>;
 }
 
-const TOP_PAD = 10;
+const TOP_PAD = 8;
 
 export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
   const x1 = getX(lens.focalLengthMinFxMm, geometry.markers);
   const x2 = getX(lens.focalLengthMaxFxMm, geometry.markers);
-  const barW = Math.max(x2 - x1 - 1, 20);
+  const barW = Math.max(x2 - x1 - 2, 20);
 
   return (
     <div
@@ -29,7 +29,7 @@ export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
           borderRadius: config.zoomBarBorderRadiusPx,
         }}
       />
-      <div style={{ marginTop: 3 }}>
+      <div className="lens-text-content">
         <div
           className="lens-name"
           style={{ fontSize: config.typography.lensNameFontSizePx, fontWeight: 'bold' }}
@@ -41,7 +41,7 @@ export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
           .map(attr => (
             <div
               key={attr.key}
-              className="lens-attr"
+              className={`lens-attr lens-attr-${attr.format}`}
               style={{ fontSize: config.typography.attributeFontSizePx, lineHeight: `${config.attributeRowHeightPx}px` }}
             >
               {formatAttributeValue(lens, attr)}

@@ -33,11 +33,11 @@ export function LensRow({ row, config, geometry, filterState, filters, activeAtt
           key={'vline-' + m.fxMm}
           style={{
             position: 'absolute',
-            left: m.x,
+            left: m.x - 1,
             top: 0,
             bottom: 0,
-            width: 1,
-            background: 'rgba(255,255,255,0.6)',
+            width: 2,
+            background: config.colors.gridLineColor,
             pointerEvents: 'none',
             zIndex: 0,
           }}

@@ -9,7 +9,7 @@ interface Props {
   activeAttributes: ReadonlySet<string>;
 }
 
-const TOP_PAD = 10;
+const TOP_PAD = 8;
 
 export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
   const dotD = config.primeDotDiameterPx;
@@ -26,10 +26,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
         className="lens-dot"
         style={{ width: dotD, height: dotD }}
       />
-      <div
-        className="lens-text-box"
-        style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', textAlign: 'center', marginTop: 3 }}
-      >
+      <div className="lens-text-box">
         <div
           className="lens-name"
           style={{ fontSize: config.typography.lensNameFontSizePx, fontWeight: 'bold' }}
@@ -41,7 +38,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes }: Props) {
           .map(attr => (
             <div
               key={attr.key}
-              className="lens-attr"
+              className={`lens-attr lens-attr-${attr.format}`}
               style={{ fontSize: config.typography.attributeFontSizePx, lineHeight: `${config.attributeRowHeightPx}px` }}
             >
               {formatAttributeValue(lens, attr)}
