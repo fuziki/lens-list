@@ -83,11 +83,11 @@
     "sectionDividerColor": "#ffffff",
     "lensDot": "#2563eb",
     "zoomBar": "#2563eb",
-    "lensNameText": "#111111",
-    "attributeText": "#555555"
+    "lensNameText": "#1a1a2e",
+    "attributeText": "#5a6478"
   },
   "typography": {
-    "lensNameFontSizePx": 12,
+    "lensNameFontSizePx": 12.5,
     "attributeFontSizePx": 11.5,
     "headerFontSizePx": 11
   },

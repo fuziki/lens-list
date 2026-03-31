@@ -38,15 +38,19 @@ export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
         </div>
         {config.displayAttributes
           .filter(attr => activeAttributes.has(attr.key))
-          .map(attr => (
-            <div
-              key={attr.key}
-              className={`lens-attr lens-attr-${attr.format}`}
-              style={{ fontSize: config.typography.attributeFontSizePx, lineHeight: `${config.attributeRowHeightPx}px` }}
-            >
-              {formatAttributeValue(lens, attr)}
-            </div>
-          ))}
+          .map(attr => {
+            const value = formatAttributeValue(lens, attr);
+            const isEmpty = value === '—' || value === '×';
+            return (
+              <div
+                key={attr.key}
+                className={`lens-attr lens-attr-${attr.format}${isEmpty ? ' lens-attr-empty' : ''}`}
+                style={{ fontSize: config.typography.attributeFontSizePx, lineHeight: `${config.attributeRowHeightPx}px` }}
+              >
+                {value}
+              </div>
+            );
+          })}
       </div>
     </div>
   );
