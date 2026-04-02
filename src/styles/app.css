@@ -386,7 +386,7 @@
 
 /* ZoomLens text content */
 .lens-text-content {
-  margin-top: 4px;
+  white-space: nowrap;
 }
 
 .lens-name {

@@ -29,7 +29,10 @@ export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
           borderRadius: config.zoomBarBorderRadiusPx,
         }}
       />
-      <div className="lens-text-content">
+      <div
+        className="lens-text-content"
+        style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: config.zoomBarHeightPx + 4, textAlign: 'center' }}
+      >
         <div
           className="lens-name"
           style={{ fontSize: config.typography.lensNameFontSizePx, fontWeight: 'bold' }}
