@@ -8,7 +8,7 @@
     {
       "fxMm": 12,
       "dxMm": 18,
-      "spacingToNext": 80
+      "spacingToNext": 120
     },
     {
       "fxMm": 24,
@@ -28,17 +28,17 @@
     {
       "fxMm": 70,
       "dxMm": 105,
-      "spacingToNext": 70
+      "spacingToNext": 80
     },
     {
       "fxMm": 85,
       "dxMm": 128,
-      "spacingToNext": 160
+      "spacingToNext": 170
     },
     {
       "fxMm": 135,
       "dxMm": 203,
-      "spacingToNext": 70
+      "spacingToNext": 130
     },
     {
       "fxMm": 200,
