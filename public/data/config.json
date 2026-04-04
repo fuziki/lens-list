@@ -93,6 +93,12 @@
   },
   "displayAttributes": [
     {
+      "key": "dxFocalLength",
+      "label": "DX焦点距離",
+      "unit": "",
+      "format": "dxFocalLength"
+    },
+    {
       "key": "weightG",
       "label": "重さ",
       "unit": "g",

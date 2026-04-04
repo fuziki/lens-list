@@ -32,7 +32,7 @@ export interface DisplayAttributeConfig {
   key: string;
   label: string;
   unit: string;
-  format: 'number' | 'boolean' | 'string' | 'rental' | 'campaign';
+  format: 'number' | 'boolean' | 'string' | 'rental' | 'campaign' | 'dxFocalLength';
 }
 
 export interface RangeFilterConfig {
