@@ -573,3 +573,14 @@
 .section + .section .section-rows {
   border-top: 5px solid rgba(30, 41, 59, 0.6);
 }
+
+/* ─── Responsive: disable sticky on mobile ──────────────────── */
+
+@media (max-width: 767px) {
+  .section-label {
+    position: static;
+  }
+  .header-corner {
+    position: static;
+  }
+}
