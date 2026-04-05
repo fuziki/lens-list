@@ -10,6 +10,8 @@ interface Props {
   filterPanelOpen: boolean;
   onToggleFilterPanel: () => void;
   onSetFilterValue: (key: string, value: FilterStateValue) => void;
+  onSaveImage: () => void;
+  saving: boolean;
 }
 
 export function Controls({
@@ -20,6 +22,8 @@ export function Controls({
   filterPanelOpen,
   onToggleFilterPanel,
   onSetFilterValue,
+  onSaveImage,
+  saving,
 }: Props) {
   return (
     <div className="controls">
@@ -34,6 +38,8 @@ export function Controls({
         isOpen={filterPanelOpen}
         onToggleOpen={onToggleFilterPanel}
         onSetFilterValue={onSetFilterValue}
+        onSaveImage={onSaveImage}
+        saving={saving}
       />
     </div>
   );

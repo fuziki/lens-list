@@ -1,4 +1,5 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useRef, useState, useCallback } from 'react';
+import html2canvas from 'html2canvas';
 import { useAppData } from './hooks/useAppData';
 import { useActiveAttributes } from './hooks/useActiveAttributes';
 import { useFilterState } from './hooks/useFilterState';
@@ -28,6 +29,37 @@ export function App() {
 }
 
 function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData }) {
+  const tableInnerRef = useRef<HTMLDivElement>(null);
+  const tableWrapperRef = useRef<HTMLDivElement>(null);
+  const [saving, setSaving] = useState(false);
+
+  const handleSaveImage = useCallback(async () => {
+    if (!tableInnerRef.current || !tableWrapperRef.current || saving) return;
+    setSaving(true);
+    const wrapper = tableWrapperRef.current;
+    const savedScrollLeft = wrapper.scrollLeft;
+    const savedScrollTop = wrapper.scrollTop;
+    wrapper.scrollLeft = 0;
+    wrapper.scrollTop = 0;
+    try {
+      const canvas = await html2canvas(tableInnerRef.current, {
+        useCORS: true,
+        scale: window.devicePixelRatio,
+        logging: false,
+        scrollX: 0,
+        scrollY: 0,
+      });
+      const link = document.createElement('a');
+      link.download = 'lens-list.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } finally {
+      wrapper.scrollLeft = savedScrollLeft;
+      wrapper.scrollTop = savedScrollTop;
+      setSaving(false);
+    }
+  }, [saving]);
+
   const showRental = useMemo(
     () => new URLSearchParams(window.location.search).get('show_rental') === '1',
     []
@@ -77,6 +109,8 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         filterPanelOpen={filterPanelOpen}
         onToggleFilterPanel={() => setFilterPanelOpen(!filterPanelOpen)}
         onSetFilterValue={setFilterValue}
+        onSaveImage={handleSaveImage}
+        saving={saving}
       />
       <ChipBar chips={activeChips} onRemove={resetFilter} />
       <TableWrapper
@@ -86,6 +120,8 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         filterState={filterState}
         activeAttributes={activeAttributes}
         rowHeight={rowHeight}
+        tableInnerRef={tableInnerRef}
+        tableWrapperRef={tableWrapperRef}
       />
     </div>
   );

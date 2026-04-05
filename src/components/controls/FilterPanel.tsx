@@ -9,18 +9,31 @@ interface Props {
   isOpen: boolean;
   onToggleOpen: () => void;
   onSetFilterValue: (key: string, value: FilterStateValue) => void;
+  onSaveImage: () => void;
+  saving: boolean;
 }
 
-export function FilterPanel({ config, filterState, isOpen, onToggleOpen, onSetFilterValue }: Props) {
+export function FilterPanel({ config, filterState, isOpen, onToggleOpen, onSetFilterValue, onSaveImage, saving }: Props) {
   return (
     <>
-      <button
-        className={`filter-accordion-btn${isOpen ? ' active' : ''}`}
-        onClick={onToggleOpen}
-        type="button"
-      >
-        {isOpen ? '▲' : '▼'} フィルター
-      </button>
+      <div className="filter-btn-row">
+        <button
+          className={`filter-accordion-btn${isOpen ? ' active' : ''}`}
+          onClick={onToggleOpen}
+          type="button"
+        >
+          {isOpen ? '▲' : '▼'} フィルター
+        </button>
+        <button
+          className={`save-image-btn${saving ? ' saving' : ''}`}
+          onClick={onSaveImage}
+          disabled={saving}
+          title="表を画像として保存"
+          type="button"
+        >
+          {saving ? '保存中…' : '📷 画像保存'}
+        </button>
+      </div>
 
       <div className={`filter-panel${isOpen ? ' open' : ''}`}>
         {config.filters.map(f => {

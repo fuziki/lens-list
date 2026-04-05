@@ -1,8 +1,51 @@
-import { useRef, useCallback, useState } from 'react';
-import html2canvas from 'html2canvas';
+import { useRef, useEffect, useState } from 'react';
+import type { RefObject } from 'react';
 import type { AppConfig, GeometryContext, LensData, FilterState } from '../../types';
 import { TableHeader } from './TableHeader';
 import { Section } from './Section';
+
+const DISCLAIMER = '※ 掲載情報は参考目的のみです。価格・仕様は変更される場合があります。最新情報はメーカー公式サイトをご確認ください。';
+const GAP_PX = 40;
+
+function DisclaimerMarquee() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const ghostRef = useRef<HTMLSpanElement>(null);
+  const [scrolling, setScrolling] = useState(false);
+  const [shift, setShift] = useState(0);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const ghost = ghostRef.current;
+    if (!container || !ghost) return;
+    const check = () => {
+      const needs = ghost.offsetWidth > container.clientWidth;
+      setScrolling(needs);
+      if (needs) setShift(ghost.offsetWidth + GAP_PX);
+    };
+    check();
+    const ro = new ResizeObserver(check);
+    ro.observe(container);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={containerRef} className="disclaimer-container">
+      <span ref={ghostRef} className="disclaimer-ghost">{DISCLAIMER}</span>
+      {scrolling ? (
+        <span
+          className="disclaimer-scrolling"
+          style={{ '--marquee-shift': `-${shift}px` } as React.CSSProperties}
+        >
+          {DISCLAIMER}
+          <span style={{ display: 'inline-block', width: GAP_PX }} />
+          {DISCLAIMER}
+        </span>
+      ) : (
+        <span>{DISCLAIMER}</span>
+      )}
+    </div>
+  );
+}
 
 interface Props {
   config: AppConfig;
@@ -11,6 +54,8 @@ interface Props {
   filterState: FilterState;
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
+  tableInnerRef: RefObject<HTMLDivElement | null>;
+  tableWrapperRef: RefObject<HTMLDivElement | null>;
 }
 
 export function TableWrapper({
@@ -20,61 +65,20 @@ export function TableWrapper({
   filterState,
   activeAttributes,
   rowHeight,
+  tableInnerRef,
+  tableWrapperRef,
 }: Props) {
   const totalWidth = config.sectionLabelWidthPx + geometry.contentWidth;
-  const tableInnerRef = useRef<HTMLDivElement>(null);
-  const tableWrapperRef = useRef<HTMLDivElement>(null);
-  const [saving, setSaving] = useState(false);
-
-  const handleSaveImage = useCallback(async () => {
-    if (!tableInnerRef.current || !tableWrapperRef.current || saving) return;
-    setSaving(true);
-
-    const wrapper = tableWrapperRef.current;
-    const savedScrollLeft = wrapper.scrollLeft;
-    const savedScrollTop = wrapper.scrollTop;
-    wrapper.scrollLeft = 0;
-    wrapper.scrollTop = 0;
-
-    try {
-      const canvas = await html2canvas(tableInnerRef.current, {
-        useCORS: true,
-        scale: window.devicePixelRatio,
-        logging: false,
-        scrollX: 0,
-        scrollY: 0,
-      });
-
-      const link = document.createElement('a');
-      link.download = 'lens-list.png';
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    } finally {
-      wrapper.scrollLeft = savedScrollLeft;
-      wrapper.scrollTop = savedScrollTop;
-      setSaving(false);
-    }
-  }, [saving]);
 
   return (
     <>
       <div className="table-meta">
-        <p className="table-disclaimer">
-          ※ 掲載情報は参考目的のみです。価格・仕様は変更される場合があります。最新情報はメーカー公式サイトをご確認ください。
-        </p>
-        <div className="table-meta-right">
-          {lensData.lastUpdated && (
+        <DisclaimerMarquee />
+        {lensData.lastUpdated && (
+          <div className="table-meta-right">
             <span className="table-last-updated">最終更新日: {lensData.lastUpdated}</span>
-          )}
-          <button
-            className={`save-image-btn${saving ? ' saving' : ''}`}
-            onClick={handleSaveImage}
-            disabled={saving}
-            title="表を画像として保存"
-          >
-            {saving ? '保存中…' : '📷 画像保存'}
-          </button>
-        </div>
+          </div>
+        )}
       </div>
       <div className="table-wrapper" ref={tableWrapperRef}>
         <div className="table-inner" ref={tableInnerRef} style={{ width: totalWidth }}>

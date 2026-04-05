@@ -33,6 +33,12 @@
   cursor: pointer;
 }
 
+.filter-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .filter-accordion-btn {
   display: inline-flex;
   align-items: center;
@@ -184,10 +190,34 @@
   gap: 12px;
 }
 
-.table-disclaimer {
-  margin: 0;
+.disclaimer-container {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
   font-size: 11px;
   color: #888;
+  white-space: nowrap;
+}
+
+.disclaimer-ghost {
+  position: absolute;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+.disclaimer-scrolling {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 18s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(var(--marquee-shift, 0px)); }
 }
 
 .table-meta-right {
