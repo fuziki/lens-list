@@ -27,20 +27,36 @@
 .top-bar-action-btn {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  min-width: 88px;
   padding: 5px 14px;
-  border: none;
+  border: 1.5px solid #555;
   border-radius: 999px;
-  background: #f0f0f0;
-  font-size: 12px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
   color: #333;
   white-space: nowrap;
-  transition: background 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .top-bar-action-btn:hover:not(:disabled) {
-  background: #e4e4e4;
+  background: #555;
+  color: #fff;
+  border-color: #555;
+}
+
+.top-bar-action-btn--primary {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: #fff;
+}
+
+.top-bar-action-btn--primary:hover:not(:disabled) {
+  background: #0052a3;
+  border-color: #0052a3;
+  color: #fff;
 }
 
 .top-bar-action-btn.saving,

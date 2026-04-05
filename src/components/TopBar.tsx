@@ -9,8 +9,8 @@ export function TopBar({ onOpenSettings, onSaveImage, saving }: Props) {
     <div className="top-bar">
       <span className="top-bar-logo">lens-list</span>
       <div className="top-bar-actions">
-        <button className="top-bar-action-btn" onClick={onOpenSettings} type="button">
-          ⚙ 設定
+        <button className="top-bar-action-btn top-bar-action-btn--primary" onClick={onOpenSettings} type="button">
+          表示設定
         </button>
         <button
           className={`top-bar-action-btn${saving ? ' saving' : ''}`}
@@ -19,7 +19,7 @@ export function TopBar({ onOpenSettings, onSaveImage, saving }: Props) {
           title="表を画像として保存"
           type="button"
         >
-          {saving ? '保存中…' : '📷 画像保存'}
+          {saving ? '保存中…' : '画像保存'}
         </button>
       </div>
     </div>
