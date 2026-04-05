@@ -2,6 +2,7 @@
 
 .top-bar {
   flex-shrink: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -19,22 +20,29 @@
 }
 
 .top-bar-actions {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 16px;
+  padding: 3px;
+  background: #f4f4f4;
+  border: 1px solid #d8d8d8;
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .top-bar-action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 88px;
-  padding: 5px 14px;
+  min-width: 80px;
+  padding: 4px 16px;
   border: 1.5px solid #555;
   border-radius: 999px;
-  background: transparent;
-  font-size: 13px;
+  background: #fff;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   color: #333;
@@ -49,14 +57,15 @@
 }
 
 .top-bar-action-btn--primary {
-  background: #0066cc;
-  border-color: #0066cc;
+  border: none;
+  padding: 5.5px 17.5px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
   color: #fff;
 }
 
 .top-bar-action-btn--primary:hover:not(:disabled) {
-  background: #0052a3;
-  border-color: #0052a3;
+  border: none;
+  background: linear-gradient(135deg, #1d4ed8, #0284c7);
   color: #fff;
 }
 
@@ -599,5 +608,10 @@
   }
   .header-corner {
     position: static;
+  }
+  .top-bar-actions {
+    position: static;
+    transform: none;
+    margin-left: auto;
   }
 }
