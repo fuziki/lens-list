@@ -4,7 +4,8 @@ import { useAppData } from './hooks/useAppData';
 import { useActiveAttributes } from './hooks/useActiveAttributes';
 import { useFilterState } from './hooks/useFilterState';
 import { buildGeometry } from './lib/geometry';
-import { Controls } from './components/controls/Controls';
+import { TopBar } from './components/TopBar';
+import { SettingsModal } from './components/SettingsModal';
 import { ChipBar } from './components/ChipBar';
 import { TableWrapper } from './components/table/TableWrapper';
 import type { AppConfig, LensData } from './types';
@@ -32,6 +33,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
   const tableInnerRef = useRef<HTMLDivElement>(null);
   const tableWrapperRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   const handleSaveImage = useCallback(async () => {
     if (!tableInnerRef.current || !tableWrapperRef.current || saving) return;
@@ -80,8 +82,6 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
     filterState,
     setFilterValue,
     resetFilter,
-    filterPanelOpen,
-    setFilterPanelOpen,
     activeChips,
   } = useFilterState(effectiveConfig, lensData);
 
@@ -101,14 +101,8 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
 
   return (
     <div id="app" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-      <Controls
-        config={effectiveConfig}
-        activeAttributes={activeAttributes}
-        onToggleAttribute={toggleAttribute}
-        filterState={filterState}
-        filterPanelOpen={filterPanelOpen}
-        onToggleFilterPanel={() => setFilterPanelOpen(!filterPanelOpen)}
-        onSetFilterValue={setFilterValue}
+      <TopBar
+        onOpenSettings={() => setSettingsOpen(true)}
         onSaveImage={handleSaveImage}
         saving={saving}
       />
@@ -122,6 +116,15 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         rowHeight={rowHeight}
         tableInnerRef={tableInnerRef}
         tableWrapperRef={tableWrapperRef}
+      />
+      <SettingsModal
+        isOpen={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+        config={effectiveConfig}
+        activeAttributes={activeAttributes}
+        onToggleAttribute={toggleAttribute}
+        filterState={filterState}
+        onSetFilterValue={setFilterValue}
       />
     </div>
   );
