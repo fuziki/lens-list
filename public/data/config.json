@@ -111,6 +111,12 @@
       "format": "number"
     },
     {
+      "key": "releaseDate",
+      "label": "発売日",
+      "unit": "",
+      "format": "date"
+    },
+    {
       "key": "campaignCashbackJpy",
       "label": "キャンペーン（2026春）2026年2月13日（金）～5月7日（木）",
       "unit": "",

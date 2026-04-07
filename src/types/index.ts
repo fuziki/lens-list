@@ -32,7 +32,7 @@ export interface DisplayAttributeConfig {
   key: string;
   label: string;
   unit: string;
-  format: 'number' | 'boolean' | 'string' | 'rental' | 'campaign' | 'dxFocalLength';
+  format: 'number' | 'boolean' | 'string' | 'rental' | 'campaign' | 'dxFocalLength' | 'date';
 }
 
 export interface RangeFilterConfig {
@@ -94,6 +94,7 @@ export interface PrimeLens {
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
   sLine?: boolean;
+  releaseDate?: string;
 }
 
 export interface ZoomLens {
@@ -113,6 +114,7 @@ export interface ZoomLens {
   rentalAvailable: number | false | null;
   imageStabilization: boolean;
   sLine?: boolean;
+  releaseDate?: string;
 }
 
 export type Lens = PrimeLens | ZoomLens;

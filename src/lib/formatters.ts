@@ -27,6 +27,12 @@ export function formatAttributeValue(lens: Lens, attr: DisplayAttributeConfig): 
     return '×';
   }
 
+  if (attr.format === 'date') {
+    if (!val) return '—';
+    const [y, m, d] = String(val).split('-').map(Number);
+    return `${y}年${m}月${d}日`;
+  }
+
   if (val == null) return '—';
 
   if (attr.format === 'boolean') {
