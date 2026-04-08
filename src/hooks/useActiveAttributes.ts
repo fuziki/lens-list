@@ -3,6 +3,7 @@ import type { AppConfig } from '../types';
 
 export function useActiveAttributes(config: AppConfig) {
   const [activeAttributes, setActiveAttributes] = useState<ReadonlySet<string>>(new Set());
+  const [showNewBadge, setShowNewBadge] = useState(true);
 
   const toggleAttribute = useCallback((key: string) => {
     setActiveAttributes(prev => {
@@ -13,8 +14,12 @@ export function useActiveAttributes(config: AppConfig) {
     });
   }, []);
 
+  const toggleNewBadge = useCallback(() => {
+    setShowNewBadge(prev => !prev);
+  }, []);
+
   const rowHeight =
     config.rowBaseHeightPx + activeAttributes.size * config.attributeRowHeightPx;
 
-  return { activeAttributes, toggleAttribute, rowHeight };
+  return { activeAttributes, toggleAttribute, rowHeight, showNewBadge, toggleNewBadge };
 }

@@ -1,17 +1,18 @@
 import type { ZoomLens as ZoomLensType, AppConfig, GeometryContext } from '../../types';
 import { getX } from '../../lib/geometry';
-import { formatAttributeValue } from '../../lib/formatters';
+import { formatAttributeValue, isNew } from '../../lib/formatters';
 
 interface Props {
   lens: ZoomLensType;
   config: AppConfig;
   geometry: GeometryContext;
   activeAttributes: ReadonlySet<string>;
+  showNewBadge: boolean;
 }
 
 const TOP_PAD = 8;
 
-export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
+export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadge }: Props) {
   const x1 = getX(lens.focalLengthMinFxMm, geometry.markers);
   const x2 = getX(lens.focalLengthMaxFxMm, geometry.markers);
   const barW = Math.max(x2 - x1 - 2, 20);
@@ -37,7 +38,7 @@ export function ZoomLens({ lens, config, geometry, activeAttributes }: Props) {
           className="lens-name"
           style={{ fontSize: config.typography.lensNameFontSizePx, fontWeight: 'bold' }}
         >
-          {lens.name}
+          {showNewBadge && isNew(lens.releaseDate) && <span className="lens-new-badge">NEW</span>}<span className="lens-name-text">{lens.name}</span>
         </div>
         {config.displayAttributes
           .filter(attr => activeAttributes.has(attr.key))

@@ -12,9 +12,10 @@ interface Props {
   filters: FilterConfig[];
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
+  showNewBadge: boolean;
 }
 
-export function LensRow({ row, config, geometry, filterState, filters, activeAttributes, rowHeight }: Props) {
+export function LensRow({ row, config, geometry, filterState, filters, activeAttributes, rowHeight, showNewBadge }: Props) {
   const visibleLenses = useMemo(
     () => row.lenses.filter(lens => lensMatchesFilters(lens, filterState, filters)),
     [row.lenses, filterState, filters]
@@ -51,6 +52,7 @@ export function LensRow({ row, config, geometry, filterState, filters, activeAtt
             config={config}
             geometry={geometry}
             activeAttributes={activeAttributes}
+            showNewBadge={showNewBadge}
           />
         ) : (
           <ZoomLens
@@ -59,6 +61,7 @@ export function LensRow({ row, config, geometry, filterState, filters, activeAtt
             config={config}
             geometry={geometry}
             activeAttributes={activeAttributes}
+            showNewBadge={showNewBadge}
           />
         )
       )}

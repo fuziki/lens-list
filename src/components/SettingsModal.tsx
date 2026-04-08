@@ -11,6 +11,8 @@ interface Props {
   config: AppConfig;
   activeAttributes: ReadonlySet<string>;
   onToggleAttribute: (key: string) => void;
+  showNewBadge: boolean;
+  onToggleNewBadge: () => void;
   filterState: FilterState;
   onSetFilterValue: (key: string, value: FilterStateValue) => void;
 }
@@ -21,6 +23,8 @@ export function SettingsModal({
   config,
   activeAttributes,
   onToggleAttribute,
+  showNewBadge,
+  onToggleNewBadge,
   filterState,
   onSetFilterValue,
 }: Props) {
@@ -55,6 +59,8 @@ export function SettingsModal({
               displayAttributes={config.displayAttributes}
               activeAttributes={activeAttributes}
               onToggle={onToggleAttribute}
+              showNewBadge={showNewBadge}
+              onToggleNewBadge={onToggleNewBadge}
             />
           </div>
           {config.filters.length > 0 && (

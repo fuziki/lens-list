@@ -54,6 +54,7 @@ interface Props {
   filterState: FilterState;
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
+  showNewBadge: boolean;
   tableInnerRef: RefObject<HTMLDivElement | null>;
   tableWrapperRef: RefObject<HTMLDivElement | null>;
 }
@@ -65,6 +66,7 @@ export function TableWrapper({
   filterState,
   activeAttributes,
   rowHeight,
+  showNewBadge,
   tableInnerRef,
   tableWrapperRef,
 }: Props) {
@@ -93,6 +95,7 @@ export function TableWrapper({
               filters={config.filters}
               activeAttributes={activeAttributes}
               rowHeight={rowHeight}
+              showNewBadge={showNewBadge}
             />
           ))}
         </div>

@@ -11,9 +11,10 @@ interface Props {
   filters: FilterConfig[];
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
+  showNewBadge: boolean;
 }
 
-export function Section({ section, config, geometry, filterState, filters, activeAttributes, rowHeight }: Props) {
+export function Section({ section, config, geometry, filterState, filters, activeAttributes, rowHeight, showNewBadge }: Props) {
   const visibleRows = useMemo(
     () =>
       section.rows.filter(row =>
@@ -43,6 +44,7 @@ export function Section({ section, config, geometry, filterState, filters, activ
             filters={filters}
             activeAttributes={activeAttributes}
             rowHeight={rowHeight}
+            showNewBadge={showNewBadge}
           />
         ))}
       </div>

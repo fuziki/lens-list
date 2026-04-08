@@ -77,7 +77,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
   }, [config, showRental]);
 
   const geometry = useMemo(() => buildGeometry(effectiveConfig), [effectiveConfig]);
-  const { activeAttributes, toggleAttribute, rowHeight } = useActiveAttributes(effectiveConfig);
+  const { activeAttributes, toggleAttribute, rowHeight, showNewBadge, toggleNewBadge } = useActiveAttributes(effectiveConfig);
   const {
     filterState,
     setFilterValue,
@@ -114,6 +114,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         filterState={filterState}
         activeAttributes={activeAttributes}
         rowHeight={rowHeight}
+        showNewBadge={showNewBadge}
         tableInnerRef={tableInnerRef}
         tableWrapperRef={tableWrapperRef}
       />
@@ -123,6 +124,8 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         config={effectiveConfig}
         activeAttributes={activeAttributes}
         onToggleAttribute={toggleAttribute}
+        showNewBadge={showNewBadge}
+        onToggleNewBadge={toggleNewBadge}
         filterState={filterState}
         onSetFilterValue={setFilterValue}
       />

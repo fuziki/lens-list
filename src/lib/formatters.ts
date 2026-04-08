@@ -1,5 +1,13 @@
 import type { Lens, DisplayAttributeConfig } from '../types';
 
+export function isNew(releaseDate?: string): boolean {
+  if (!releaseDate) return false;
+  const release = new Date(releaseDate);
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+  return release >= sixMonthsAgo;
+}
+
 export function formatAttributeValue(lens: Lens, attr: DisplayAttributeConfig): string {
   const val = (lens as unknown as Record<string, unknown>)[attr.key];
 
