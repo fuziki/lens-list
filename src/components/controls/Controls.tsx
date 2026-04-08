@@ -6,6 +6,8 @@ interface Props {
   config: AppConfig;
   activeAttributes: ReadonlySet<string>;
   onToggleAttribute: (key: string) => void;
+  showNewBadge: boolean;
+  onToggleNewBadge: () => void;
   filterState: FilterState;
   filterPanelOpen: boolean;
   onToggleFilterPanel: () => void;
@@ -18,6 +20,8 @@ export function Controls({
   config,
   activeAttributes,
   onToggleAttribute,
+  showNewBadge,
+  onToggleNewBadge,
   filterState,
   filterPanelOpen,
   onToggleFilterPanel,
@@ -31,6 +35,8 @@ export function Controls({
         displayAttributes={config.displayAttributes}
         activeAttributes={activeAttributes}
         onToggle={onToggleAttribute}
+        showNewBadge={showNewBadge}
+        onToggleNewBadge={onToggleNewBadge}
       />
       <FilterPanel
         config={config}
