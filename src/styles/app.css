@@ -522,6 +522,13 @@
   text-align: center;
   top: 0;
   z-index: 1;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.lens-item:hover {
+  transform: translateY(-4px);
+  z-index: 5;
 }
 
 .lens-dot {
@@ -611,6 +618,115 @@
   color: #0d7a4f;
 }
 
+
+/* ─── Lens detail modal ─────────────────────────────────────── */
+
+.lens-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.lens-detail-section {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
+}
+
+.lens-detail-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.lens-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7px 0;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.lens-detail-row:last-child {
+  border-bottom: none;
+}
+
+.lens-detail-label {
+  font-size: 13px;
+  color: #888;
+  flex: 1;
+  min-width: 0;
+  margin-right: 12px;
+  word-break: break-all;
+}
+
+.lens-detail-value {
+  font-size: 13px;
+  color: #111;
+  text-align: right;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.lens-detail-btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.lens-detail-search-btn {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 11px 0;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.lens-detail-official-btn {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #fff;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1.5px solid #2563eb;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .lens-detail-btn-row {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lens-detail-search-btn,
+  .lens-detail-official-btn {
+    flex: 1;
+    max-width: 260px;
+    margin: 0;
+  }
+}
 
 /* ─── Section border separators ────────────────────────────── */
 

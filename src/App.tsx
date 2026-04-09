@@ -6,9 +6,10 @@ import { useFilterState } from './hooks/useFilterState';
 import { buildGeometry } from './lib/geometry';
 import { TopBar } from './components/TopBar';
 import { SettingsModal } from './components/SettingsModal';
+import { LensDetailModal } from './components/LensDetailModal';
 import { ChipBar } from './components/ChipBar';
 import { TableWrapper } from './components/table/TableWrapper';
-import type { AppConfig, LensData } from './types';
+import type { AppConfig, LensData, Lens } from './types';
 import './styles/app.css';
 
 export function App() {
@@ -34,6 +35,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
   const tableWrapperRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [selectedLens, setSelectedLens] = useState<Lens | null>(null);
 
   const handleSaveImage = useCallback(async () => {
     if (!tableInnerRef.current || !tableWrapperRef.current || saving) return;
@@ -117,6 +119,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         showNewBadge={showNewBadge}
         tableInnerRef={tableInnerRef}
         tableWrapperRef={tableWrapperRef}
+        onLensClick={setSelectedLens}
       />
       <SettingsModal
         isOpen={settingsOpen}
@@ -128,6 +131,11 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         onToggleNewBadge={toggleNewBadge}
         filterState={filterState}
         onSetFilterValue={setFilterValue}
+      />
+      <LensDetailModal
+        lens={selectedLens}
+        config={effectiveConfig}
+        onClose={() => setSelectedLens(null)}
       />
     </div>
   );

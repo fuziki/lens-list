@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { LensSection, AppConfig, GeometryContext, FilterState, FilterConfig } from '../../types';
+import type { LensSection, Lens, AppConfig, GeometryContext, FilterState, FilterConfig } from '../../types';
 import { lensMatchesFilters } from '../../lib/filterLogic';
 import { LensRow } from './LensRow';
 
@@ -12,9 +12,10 @@ interface Props {
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
   showNewBadge: boolean;
+  onLensClick: (lens: Lens) => void;
 }
 
-export function Section({ section, config, geometry, filterState, filters, activeAttributes, rowHeight, showNewBadge }: Props) {
+export function Section({ section, config, geometry, filterState, filters, activeAttributes, rowHeight, showNewBadge, onLensClick }: Props) {
   const visibleRows = useMemo(
     () =>
       section.rows.filter(row =>
@@ -45,6 +46,7 @@ export function Section({ section, config, geometry, filterState, filters, activ
             activeAttributes={activeAttributes}
             rowHeight={rowHeight}
             showNewBadge={showNewBadge}
+            onLensClick={onLensClick}
           />
         ))}
       </div>

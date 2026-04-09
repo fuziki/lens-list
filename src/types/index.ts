@@ -95,6 +95,7 @@ export interface PrimeLens {
   imageStabilization: boolean;
   sLine?: boolean;
   releaseDate?: string;
+  officialUrl?: string;
 }
 
 export interface ZoomLens {
@@ -115,6 +116,7 @@ export interface ZoomLens {
   imageStabilization: boolean;
   sLine?: boolean;
   releaseDate?: string;
+  officialUrl?: string;
 }
 
 export type Lens = PrimeLens | ZoomLens;

@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import type { RefObject } from 'react';
-import type { AppConfig, GeometryContext, LensData, FilterState } from '../../types';
+import type { AppConfig, GeometryContext, LensData, FilterState, Lens } from '../../types';
 import { TableHeader } from './TableHeader';
 import { Section } from './Section';
 
@@ -57,6 +57,7 @@ interface Props {
   showNewBadge: boolean;
   tableInnerRef: RefObject<HTMLDivElement | null>;
   tableWrapperRef: RefObject<HTMLDivElement | null>;
+  onLensClick: (lens: Lens) => void;
 }
 
 export function TableWrapper({
@@ -69,6 +70,7 @@ export function TableWrapper({
   showNewBadge,
   tableInnerRef,
   tableWrapperRef,
+  onLensClick,
 }: Props) {
   const totalWidth = config.sectionLabelWidthPx + geometry.contentWidth;
 
@@ -96,6 +98,7 @@ export function TableWrapper({
               activeAttributes={activeAttributes}
               rowHeight={rowHeight}
               showNewBadge={showNewBadge}
+              onLensClick={onLensClick}
             />
           ))}
         </div>

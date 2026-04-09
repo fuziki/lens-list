@@ -8,11 +8,12 @@ interface Props {
   geometry: GeometryContext;
   activeAttributes: ReadonlySet<string>;
   showNewBadge: boolean;
+  onClick: () => void;
 }
 
 const TOP_PAD = 8;
 
-export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadge }: Props) {
+export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadge, onClick }: Props) {
   const x1 = getX(lens.focalLengthMinFxMm, geometry.markers);
   const x2 = getX(lens.focalLengthMaxFxMm, geometry.markers);
   const barW = Math.max(x2 - x1 - 2, 20);
@@ -22,6 +23,7 @@ export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadg
       className="lens-item"
       data-lens-id={lens.id}
       style={{ left: x1 + 1, top: TOP_PAD, width: barW }}
+      onClick={onClick}
     >
       <div
         className="zoom-bar"

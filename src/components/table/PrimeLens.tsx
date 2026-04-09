@@ -8,11 +8,12 @@ interface Props {
   geometry: GeometryContext;
   activeAttributes: ReadonlySet<string>;
   showNewBadge: boolean;
+  onClick: () => void;
 }
 
 const TOP_PAD = 8;
 
-export function PrimeLens({ lens, config, geometry, activeAttributes, showNewBadge }: Props) {
+export function PrimeLens({ lens, config, geometry, activeAttributes, showNewBadge, onClick }: Props) {
   const dotD = config.primeDotDiameterPx;
   const dotR = dotD / 2;
   const cx = getX(lens.focalLengthFxMm, geometry.markers);
@@ -22,6 +23,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes, showNewBad
       className="lens-item"
       data-lens-id={lens.id}
       style={{ left: cx - dotR, top: TOP_PAD, width: dotD, overflow: 'visible' }}
+      onClick={onClick}
     >
       <div
         className="lens-dot"
