@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22",
+  "lastUpdated": "2026-06-25",
   "sections": [
     {
       "id": "prime",
@@ -1192,6 +1192,29 @@
               "imageStabilization": true,
               "manufacturer": "タムロン",
               "releaseDate": "2023-10-31"
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-dx-std",
+          "lenses": [
+            {
+              "id": "tamron-17-70-2.8-dx",
+              "name": "17-70mm F/2.8 Di III-A VC RXD",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 17,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 17,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 540,
+              "priceJpy": 166100,
+              "campaignCashbackJpy": false,
+              "rentalAvailable": false,
+              "imageStabilization": true,
+              "manufacturer": "タムロン",
+              "releaseDate": "2026-07-02"
             }
           ]
         },
