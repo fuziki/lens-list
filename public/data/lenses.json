@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25",
+  "lastUpdated": "2026-06-28",
   "sections": [
     {
       "id": "prime",
@@ -556,6 +556,29 @@
               "sLine": true,
               "releaseDate": "2026-04-24",
               "officialUrl": "https://nij.nikon.com/products/lineup/nikkor/zmount/nikkor_z_70-200mm_f28_vr_s_2/"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-tele28",
+          "lenses": [
+            {
+              "id": "z-120-300-2.8-tc-vr-s",
+              "name": "Z 120-300mm f/2.8 TC VR S",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 120,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 120,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 2.8,
+              "weightG": null,
+              "priceJpy": null,
+              "campaignCashbackJpy": false,
+              "rentalAvailable": false,
+              "imageStabilization": true,
+              "manufacturer": "ニコン",
+              "sLine": true
             }
           ]
         },
