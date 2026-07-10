@@ -1,4 +1,5 @@
 import type { AppConfig, FilterState, FilterStateValue, RangeFilterState } from '../../types';
+import { getFormatLabels } from '../../lib/formatters';
 import { RangeFilterItem } from './RangeFilterItem';
 import { SelectFilterItem } from './SelectFilterItem';
 import { ToggleFilterItem } from './ToggleFilterItem';
@@ -51,6 +52,7 @@ export function FilterPanel({ config, filterState, isOpen, onToggleOpen, onSetFi
               <SelectFilterItem
                 key={f.key}
                 filterDef={f}
+                formatLabels={getFormatLabels(config)}
                 value={(filterState[f.key] as string) ?? 'all'}
                 onChange={(key, value) => onSetFilterValue(key, value)}
               />

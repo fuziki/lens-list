@@ -39,7 +39,7 @@ export function PrimeLens({ lens, config, geometry, activeAttributes, showNewBad
         {config.displayAttributes
           .filter(attr => activeAttributes.has(attr.key))
           .map(attr => {
-            const value = formatAttributeValue(lens, attr);
+            const value = formatAttributeValue(lens, attr, config.cropFactor);
             const isEmpty = value === '—' || value === '×';
             return (
               <div

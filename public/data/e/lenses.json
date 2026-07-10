@@ -1,0 +1,1398 @@
+{
+  "lastUpdated": "2026-07-09",
+  "sections": [
+    {
+      "id": "prime",
+      "label": "単焦点レンズ",
+      "rows": [
+        {
+          "id": "prime-row-0",
+          "lenses": [
+            {
+              "id": "fe-50mm-f1.2-gm",
+              "name": "FE 50mm F1.2 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.2,
+              "weightG": 778,
+              "priceJpy": 315700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-300mm-f2.8-gm-oss",
+              "name": "FE 300mm F2.8 GM OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 300,
+              "focalLengthFxMm": 300,
+              "maxAperture": 2.8,
+              "weightG": 1470,
+              "priceJpy": 966900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-600mm-f4-gm-oss",
+              "name": "FE 600mm F4 GM OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 600,
+              "focalLengthFxMm": 600,
+              "maxAperture": 4,
+              "weightG": 3040,
+              "priceJpy": 1969000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-1",
+          "lenses": [
+            {
+              "id": "fe-24mm-f1.4-gm",
+              "name": "FE 24mm F1.4 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.4,
+              "weightG": 445,
+              "priceJpy": 213400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-35mm-f1.4-gm",
+              "name": "FE 35mm F1.4 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.4,
+              "weightG": 524,
+              "priceJpy": 215600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-50mm-f1.4-gm",
+              "name": "FE 50mm F1.4 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.4,
+              "weightG": 516,
+              "priceJpy": 213400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-85mm-f1.4-gm-ii",
+              "name": "FE 85mm F1.4 GM II",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.4,
+              "weightG": 642,
+              "priceJpy": 295900,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-400mm-f2.8-gm-oss",
+              "name": "FE 400mm F2.8 GM OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 400,
+              "focalLengthFxMm": 400,
+              "maxAperture": 2.8,
+              "weightG": 2895,
+              "priceJpy": 1740200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-2",
+          "lenses": [
+            {
+              "id": "distagon-t-fe-35mm-f1.4-za",
+              "name": "Distagon T* FE 35mm F1.4 ZA",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.4,
+              "weightG": 630,
+              "priceJpy": 162800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-85mm-f1.4-gm",
+              "name": "FE 85mm F1.4 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.4,
+              "weightG": 820,
+              "priceJpy": 242000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-3",
+          "lenses": [
+            {
+              "id": "planar-t-fe-50mm-f1.4-za",
+              "name": "Planar T* FE 50mm F1.4 ZA",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.4,
+              "weightG": 778,
+              "priceJpy": 199100,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-4",
+          "lenses": [
+            {
+              "id": "fe-14mm-f1.8-gm",
+              "name": "FE 14mm F1.8 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 14,
+              "focalLengthFxMm": 14,
+              "maxAperture": 1.8,
+              "weightG": 460,
+              "priceJpy": 216700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true,
+              "officialUrl": "https://www.sony.jp/ichigan/products/SEL14F18GM/"
+            },
+            {
+              "id": "fe-35mm-f1.8",
+              "name": "FE 35mm F1.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.8,
+              "weightG": 280,
+              "priceJpy": 88000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-50mm-f1.8",
+              "name": "FE 50mm F1.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.8,
+              "weightG": 186,
+              "priceJpy": 38500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-85mm-f1.8",
+              "name": "FE 85mm F1.8",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.8,
+              "weightG": 371,
+              "priceJpy": 70400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-135mm-f1.8-gm",
+              "name": "FE 135mm F1.8 GM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 135,
+              "focalLengthFxMm": 135,
+              "maxAperture": 1.8,
+              "weightG": 950,
+              "priceJpy": 272800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-5",
+          "lenses": [
+            {
+              "id": "fe-16mm-f1.8-g",
+              "name": "FE 16mm F1.8 G",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 16,
+              "focalLengthFxMm": 16,
+              "maxAperture": 1.8,
+              "weightG": 304,
+              "priceJpy": 136400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "sonnar-t-fe-55mm-f1.8-za",
+              "name": "Sonnar T* FE 55mm F1.8 ZA",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 55,
+              "focalLengthFxMm": 55,
+              "maxAperture": 1.8,
+              "weightG": 281,
+              "priceJpy": 117700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-6",
+          "lenses": [
+            {
+              "id": "fe-20mm-f1.8-g",
+              "name": "FE 20mm F1.8 G",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 20,
+              "focalLengthFxMm": 20,
+              "maxAperture": 1.8,
+              "weightG": 373,
+              "priceJpy": 155100,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-90mm-f2.8-macro-g-oss",
+              "name": "FE 90mm F2.8 Macro G OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 90,
+              "focalLengthFxMm": 90,
+              "maxAperture": 2.8,
+              "weightG": 602,
+              "priceJpy": 151800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-7",
+          "lenses": [
+            {
+              "id": "fe-50mm-f2.8-macro",
+              "name": "FE 50mm F2.8 Macro",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 2.8,
+              "weightG": 236,
+              "priceJpy": 64900,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-100mm-f2.8-macro-gm-oss",
+              "name": "FE 100mm F2.8 Macro GM OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 100,
+              "focalLengthFxMm": 100,
+              "maxAperture": 2.8,
+              "weightG": 646,
+              "priceJpy": 199500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-8",
+          "lenses": [
+            {
+              "id": "fe-100mm-f2.8-stf-gm-oss",
+              "name": "FE 100mm F2.8 STF GM OSS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 100,
+              "focalLengthFxMm": 100,
+              "maxAperture": 2.8,
+              "weightG": 700,
+              "priceJpy": 229900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-9",
+          "lenses": [
+            {
+              "id": "e-15mm-f1.4-g",
+              "name": "E 15mm F1.4 G",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 15,
+              "focalLengthFxMm": 15,
+              "maxAperture": 1.4,
+              "weightG": 219,
+              "priceJpy": 99000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "e-30mm-f3.5-macro",
+              "name": "E 30mm F3.5 Macro",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 30,
+              "focalLengthFxMm": 30,
+              "maxAperture": 3.5,
+              "weightG": 138,
+              "priceJpy": 33000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-10",
+          "lenses": [
+            {
+              "id": "e-11mm-f1.8",
+              "name": "E 11mm F1.8",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 11,
+              "focalLengthFxMm": 11,
+              "maxAperture": 1.8,
+              "weightG": 181,
+              "priceJpy": 69300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "e-35mm-f1.8-oss",
+              "name": "E 35mm F1.8 OSS",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.8,
+              "weightG": 154,
+              "priceJpy": 58300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "e-50mm-f1.8-oss",
+              "name": "E 50mm F1.8 OSS",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.8,
+              "weightG": 202,
+              "priceJpy": 39600,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-11",
+          "lenses": [
+            {
+              "id": "sonnar-t-e-24mm-f1.8-za",
+              "name": "Sonnar T＊ E 24mm F1.8 ZA",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.8,
+              "weightG": 225,
+              "priceJpy": 102300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compact-prime",
+      "label": "薄型単焦点レンズ",
+      "rows": [
+        {
+          "id": "compact-prime-row-0",
+          "lenses": [
+            {
+              "id": "fe-28mm-f2",
+              "name": "FE 28mm F2",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 28,
+              "focalLengthFxMm": 28,
+              "maxAperture": 2,
+              "weightG": 200,
+              "priceJpy": 66000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-40mm-f2.5-g",
+              "name": "FE 40mm F2.5 G",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 40,
+              "focalLengthFxMm": 40,
+              "maxAperture": 2.5,
+              "weightG": 173,
+              "priceJpy": 94600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "compact-prime-row-1",
+          "lenses": [
+            {
+              "id": "fe-24mm-f2.8-g",
+              "name": "FE 24mm F2.8 G",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 2.8,
+              "weightG": 162,
+              "priceJpy": 94600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-50mm-f2.5-g",
+              "name": "FE 50mm F2.5 G",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 2.5,
+              "weightG": 174,
+              "priceJpy": 94600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "compact-prime-row-2",
+          "lenses": [
+            {
+              "id": "sonnar-t-fe-35mm-f2.8-za",
+              "name": "Sonnar T* FE 35mm F2.8 ZA",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 2.8,
+              "weightG": 120,
+              "priceJpy": 90200,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "compact-prime-row-3",
+          "lenses": [
+            {
+              "id": "e-16mm-f2.8",
+              "name": "E16mm F2.8",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 16,
+              "focalLengthFxMm": 16,
+              "maxAperture": 2.8,
+              "weightG": 67,
+              "priceJpy": 27500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "compact-prime-row-4",
+          "lenses": [
+            {
+              "id": "e-20mm-f2.8",
+              "name": "E 20mm F2.8",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 20,
+              "focalLengthFxMm": 20,
+              "maxAperture": 2.8,
+              "weightG": 69,
+              "priceJpy": 38500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "label": "ズームレンズ",
+      "rows": [
+        {
+          "id": "zoom-row-0",
+          "lenses": [
+            {
+              "id": "fe-28-70mm-f2-gm",
+              "name": "FE 28-70mm F2 GM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2,
+              "weightG": 918,
+              "priceJpy": 498300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-200-600mm-f5.6-6.3-g-oss",
+              "name": "FE 200-600mm F5.6-6.3 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 200,
+              "focalLengthMaxMm": 600,
+              "focalLengthMinFxMm": 200,
+              "focalLengthMaxFxMm": 600,
+              "maxAperture": 5.6,
+              "weightG": 2115,
+              "priceJpy": 301400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-1",
+          "lenses": [
+            {
+              "id": "fe-12-24mm-f2.8-gm",
+              "name": "FE 12-24mm F2.8 GM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 12,
+              "focalLengthMaxMm": 24,
+              "focalLengthMinFxMm": 12,
+              "focalLengthMaxFxMm": 24,
+              "maxAperture": 2.8,
+              "weightG": 847,
+              "priceJpy": 436700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true,
+              "officialUrl": "https://www.sony.jp/ichigan/products/SEL1224GM/"
+            },
+            {
+              "id": "fe-50-150mm-f2-gm",
+              "name": "FE 50-150mm F2 GM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 50,
+              "focalLengthMaxMm": 150,
+              "focalLengthMinFxMm": 50,
+              "focalLengthMaxFxMm": 150,
+              "maxAperture": 2,
+              "weightG": 1340,
+              "priceJpy": 597300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-2",
+          "lenses": [
+            {
+              "id": "fe-24-70mm-f2.8-gm-ii",
+              "name": "FE 24-70mm F2.8 GM II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 695,
+              "priceJpy": 319000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-70-200mm-f2.8-gm-oss-ii",
+              "name": "FE 70-200mm F2.8 GM OSS II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 2.8,
+              "weightG": 1045,
+              "priceJpy": 385000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-3",
+          "lenses": [
+            {
+              "id": "fe-16-35mm-f2.8-gm-ii",
+              "name": "FE 16-35mm F2.8 GM II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 2.8,
+              "weightG": 547,
+              "priceJpy": 358600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true,
+              "officialUrl": "https://www.sony.jp/ichigan/products/SEL1635GM2/"
+            },
+            {
+              "id": "fe-100-400mm-f4.5-5.6-gm-oss-ii",
+              "name": "FE 100-400mm F4.5-5.6 GM OSS II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 4.5,
+              "weightG": 1840,
+              "priceJpy": 726000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-4",
+          "lenses": [
+            {
+              "id": "fe-24-70mm-f2.8-gm",
+              "name": "FE 24-70mm F2.8 GM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 886,
+              "priceJpy": 253000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-70-200mm-f2.8-gm-oss",
+              "name": "FE 70-200mm F2.8 GM OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 2.8,
+              "weightG": 1480,
+              "priceJpy": 297000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-5",
+          "lenses": [
+            {
+              "id": "fe-16-35mm-f2.8-gm",
+              "name": "FE 16-35mm F2.8 GM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 2.8,
+              "weightG": 680,
+              "priceJpy": 283800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー",
+              "sLine": true
+            },
+            {
+              "id": "fe-100-400mm-f4.5-5.6-gm-oss",
+              "name": "FE 100-400mm F4.5-5.6 GM OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 4.5,
+              "weightG": 1395,
+              "priceJpy": 364100,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-6",
+          "lenses": [
+            {
+              "id": "fe-16-25mm-f2.8-g",
+              "name": "FE 16-25mm F2.8 G",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 25,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 25,
+              "maxAperture": 2.8,
+              "weightG": 409,
+              "priceJpy": 184800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-400-800mm-f6.3-8-g-oss",
+              "name": "FE 400-800mm F6.3-8 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 400,
+              "focalLengthMaxMm": 800,
+              "focalLengthMinFxMm": 400,
+              "focalLengthMaxFxMm": 800,
+              "maxAperture": 6.3,
+              "weightG": 2475,
+              "priceJpy": 409200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-7",
+          "lenses": [
+            {
+              "id": "fe-24-50mm-f2.8-g",
+              "name": "FE 24-50mm F2.8 G",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 2.8,
+              "weightG": 440,
+              "priceJpy": 180400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-70-300mm-f4.5-5.6-g-oss",
+              "name": "FE 70-300mm F4.5-5.6 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 4.5,
+              "weightG": 854,
+              "priceJpy": 195800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-8",
+          "lenses": [
+            {
+              "id": "fe-12-24mm-f4-g",
+              "name": "FE 12-24mm F4 G",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 12,
+              "focalLengthMaxMm": 24,
+              "focalLengthMinFxMm": 12,
+              "focalLengthMaxFxMm": 24,
+              "maxAperture": 4,
+              "weightG": 565,
+              "priceJpy": 272800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-24-105mm-f4-g-oss",
+              "name": "FE 24-105mm F4 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 4,
+              "weightG": 663,
+              "priceJpy": 170500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-9",
+          "lenses": [
+            {
+              "id": "vario-tessar-t-fe-16-35mm-f4-za-oss",
+              "name": "Vario-Tessar T* FE 16-35mm F4 ZA OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 4,
+              "weightG": 518,
+              "priceJpy": 158400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-70-200mm-f4-macro-g-oss-ii",
+              "name": "FE 70-200mm F4 Macro G OSS II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 4,
+              "weightG": 794,
+              "priceJpy": 258500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-10",
+          "lenses": [
+            {
+              "id": "fe-20-70mm-f4-g",
+              "name": "FE 20-70mm F4 G",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 20,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 20,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 4,
+              "weightG": 488,
+              "priceJpy": 191400,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "fe-70-200mm-f4-g-oss",
+              "name": "FE 70-200mm F4 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 4,
+              "weightG": 840,
+              "priceJpy": 181500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-11",
+          "lenses": [
+            {
+              "id": "vario-tessar-t-fe-24-70mm-f4-za-oss",
+              "name": "Vario-Tessar T* FE 24-70mm F4 ZA OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 4,
+              "weightG": 426,
+              "priceJpy": 124300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-12",
+          "lenses": [
+            {
+              "id": "fe-28-70mm-f3.5-5.6-oss-ii",
+              "name": "FE 28-70mm F3.5-5.6 OSS II",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 3.5,
+              "weightG": 293,
+              "priceJpy": 42900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-13",
+          "lenses": [
+            {
+              "id": "fe-28-70mm-f3.5-5.6-oss",
+              "name": "FE 28-70mm F3.5-5.6 OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 3.5,
+              "weightG": 295,
+              "priceJpy": 53625,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-14",
+          "lenses": [
+            {
+              "id": "fe-24-240mm-f3.5-6.3-oss",
+              "name": "FE 24-240mm F3.5-6.3 OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 240,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 240,
+              "maxAperture": 3.5,
+              "weightG": 780,
+              "priceJpy": 169400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-15",
+          "lenses": [
+            {
+              "id": "fe-28-60mm-f4-5.6",
+              "name": "FE 28-60mm F4-5.6",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 60,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 60,
+              "maxAperture": 4,
+              "weightG": 167,
+              "priceJpy": 52800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-16",
+          "lenses": [
+            {
+              "id": "fe-pz-16-35mm-f4-g",
+              "name": "FE PZ 16-35mm F4 G",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 4,
+              "weightG": 353,
+              "priceJpy": 185900,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-17",
+          "lenses": [
+            {
+              "id": "fe-pz-28-135mm-f4-g-oss",
+              "name": "FE PZ 28-135mm F4 G OSS",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 135,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 135,
+              "maxAperture": 4,
+              "weightG": 1215,
+              "priceJpy": 349800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-18",
+          "lenses": [
+            {
+              "id": "e-16-55mm-f2.8-g",
+              "name": "E 16-55mm F2.8 G",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 55,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 55,
+              "maxAperture": 2.8,
+              "weightG": 494,
+              "priceJpy": 162800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            },
+            {
+              "id": "e-70-350mm-f4.5-6.3-g-oss",
+              "name": "E 70-350mm F4.5-6.3 G OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 350,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 350,
+              "maxAperture": 4.5,
+              "weightG": 625,
+              "priceJpy": 123200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-19",
+          "lenses": [
+            {
+              "id": "e-18-135mm-f3.5-5.6-oss",
+              "name": "E 18-135mm F3.5-5.6 OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 135,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 135,
+              "maxAperture": 3.5,
+              "weightG": 325,
+              "priceJpy": 78100,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-20",
+          "lenses": [
+            {
+              "id": "e-18-200mm-f3.5-6.3-oss-le",
+              "name": "E 18-200mm F3.5-6.3 OSS LE",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 3.5,
+              "weightG": 460,
+              "priceJpy": 90200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-21",
+          "lenses": [
+            {
+              "id": "e-55-210mm-f4.5-6.3-oss",
+              "name": "E 55-210mm F4.5-6.3 OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 55,
+              "focalLengthMaxMm": 210,
+              "focalLengthMinFxMm": 55,
+              "focalLengthMaxFxMm": 210,
+              "maxAperture": 4.5,
+              "weightG": 345,
+              "priceJpy": 36960,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-22",
+          "lenses": [
+            {
+              "id": "e-pz-10-20mm-f4-g",
+              "name": "E PZ 10-20mm F4 G",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 10,
+              "focalLengthMaxMm": 20,
+              "focalLengthMinFxMm": 10,
+              "focalLengthMaxFxMm": 20,
+              "maxAperture": 4,
+              "weightG": 178,
+              "priceJpy": 102300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-23",
+          "lenses": [
+            {
+              "id": "e-pz-16-50mm-f3.5-5.6-oss-ii",
+              "name": "E PZ 16-50mm F3.5-5.6 OSS II",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 3.5,
+              "weightG": 107,
+              "priceJpy": 35300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-24",
+          "lenses": [
+            {
+              "id": "e-pz-18-105mm-f4-g-oss",
+              "name": "E PZ 18-105mm F4 G OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 4,
+              "weightG": 427,
+              "priceJpy": 74800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-25",
+          "lenses": [
+            {
+              "id": "e-pz-18-110mm-f4-g-oss",
+              "name": "E PZ 18-110mm F4 G OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 110,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 110,
+              "maxAperture": 4,
+              "weightG": 1105,
+              "priceJpy": 525800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-26",
+          "lenses": [
+            {
+              "id": "e-pz-18-200mm-f3.5-6.3-oss",
+              "name": "E PZ 18-200mm F3.5-6.3 OSS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 3.5,
+              "weightG": 649,
+              "priceJpy": 150700,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "ソニー"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

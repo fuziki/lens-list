@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { AppConfig, LensData, FilterState, FilterStateValue, FilterChip } from '../types';
 import { buildChips, getDefaultFilterState, resetFilterValue } from '../lib/filterLogic';
+import { getFormatLabels } from '../lib/formatters';
 
 export function useFilterState(config: AppConfig, lensData: LensData) {
   const defaultState = useMemo(
@@ -20,8 +21,8 @@ export function useFilterState(config: AppConfig, lensData: LensData) {
   }, [config.filters]);
 
   const activeChips: FilterChip[] = useMemo(
-    () => buildChips(filterState, config.filters),
-    [filterState, config.filters]
+    () => buildChips(filterState, config.filters, getFormatLabels(config)),
+    [filterState, config]
   );
 
   return {

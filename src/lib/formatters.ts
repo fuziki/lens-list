@@ -1,4 +1,13 @@
-import type { Lens, DisplayAttributeConfig } from '../types';
+import type { Lens, DisplayAttributeConfig, AppConfig, FormatLabelsConfig } from '../types';
+
+export const DEFAULT_CROP_FACTOR = 1.5;
+
+export function getFormatLabels(config: AppConfig): FormatLabelsConfig {
+  return {
+    fx: config.formatLabels?.fx ?? 'FX',
+    dx: config.formatLabels?.dx ?? 'DX',
+  };
+}
 
 export function isNew(releaseDate?: string): boolean {
   if (!releaseDate) return false;
@@ -8,7 +17,11 @@ export function isNew(releaseDate?: string): boolean {
   return release >= sixMonthsAgo;
 }
 
-export function formatAttributeValue(lens: Lens, attr: DisplayAttributeConfig): string {
+export function formatAttributeValue(
+  lens: Lens,
+  attr: DisplayAttributeConfig,
+  cropFactor: number = DEFAULT_CROP_FACTOR
+): string {
   const val = (lens as unknown as Record<string, unknown>)[attr.key];
 
   if (attr.format === 'rental') {
@@ -18,12 +31,11 @@ export function formatAttributeValue(lens: Lens, attr: DisplayAttributeConfig): 
   }
 
   if (attr.format === 'dxFocalLength') {
-    const CROP = 1.5;
     if ('focalLengthFxMm' in lens) {
-      return Math.round(lens.focalLengthFxMm * CROP) + 'mm相当';
+      return Math.round(lens.focalLengthFxMm * cropFactor) + 'mm相当';
     } else {
-      const min = Math.round(lens.focalLengthMinFxMm * CROP);
-      const max = Math.round(lens.focalLengthMaxFxMm * CROP);
+      const min = Math.round(lens.focalLengthMinFxMm * cropFactor);
+      const max = Math.round(lens.focalLengthMaxFxMm * cropFactor);
       return `${min}-${max}mm相当`;
     }
   }

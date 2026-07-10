@@ -45,7 +45,7 @@ export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadg
         {config.displayAttributes
           .filter(attr => activeAttributes.has(attr.key))
           .map(attr => {
-            const value = formatAttributeValue(lens, attr);
+            const value = formatAttributeValue(lens, attr, config.cropFactor);
             const isEmpty = value === '—' || value === '×';
             return (
               <div

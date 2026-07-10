@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import type { AppConfig, FilterState, FilterStateValue, RangeFilterState } from '../types';
+import { getFormatLabels } from '../lib/formatters';
 import { AttributeCheckboxes } from './controls/AttributeCheckboxes';
 import { RangeFilterItem } from './controls/RangeFilterItem';
 import { SelectFilterItem } from './controls/SelectFilterItem';
@@ -83,6 +84,7 @@ export function SettingsModal({
                       <SelectFilterItem
                         key={f.key}
                         filterDef={f}
+                        formatLabels={getFormatLabels(config)}
                         value={(filterState[f.key] as string) ?? 'all'}
                         onChange={(key, value) => onSetFilterValue(key, value)}
                       />

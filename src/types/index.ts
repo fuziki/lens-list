@@ -60,7 +60,14 @@ export interface ToggleFilterConfig {
 
 export type FilterConfig = RangeFilterConfig | SelectFilterConfig | ToggleFilterConfig;
 
+export interface FormatLabelsConfig {
+  fx: string;
+  dx: string;
+}
+
 export interface AppConfig {
+  formatLabels?: FormatLabelsConfig;
+  cropFactor?: number;
   focalLengthMarkers: FocalLengthMarkerConfig[];
   rightPaddingPx: number;
   sectionLabelWidthPx: number;

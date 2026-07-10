@@ -6,7 +6,10 @@ import type {
   RangeFilterState,
   LensData,
   RangeFilterConfig,
+  FormatLabelsConfig,
 } from '../types';
+
+const DEFAULT_FORMAT_LABELS: FormatLabelsConfig = { fx: 'FX', dx: 'DX' };
 
 export function lensMatchesFilters(
   lens: Lens,
@@ -52,7 +55,11 @@ export function formatRangeVal(filterDef: RangeFilterConfig, val: number): strin
   return String(val);
 }
 
-export function buildChips(filterState: FilterState, filters: FilterConfig[]): FilterChip[] {
+export function buildChips(
+  filterState: FilterState,
+  filters: FilterConfig[],
+  formatLabels: FormatLabelsConfig = DEFAULT_FORMAT_LABELS
+): FilterChip[] {
   const chips: FilterChip[] = [];
 
   filters.forEach(f => {
@@ -73,7 +80,11 @@ export function buildChips(filterState: FilterState, filters: FilterConfig[]): F
     } else if (f.type === 'select') {
       if (state !== 'all' && state !== null) {
         if (f.key === 'maxAperture') label = f.label + ': f/' + state + '以下';
-        else if (f.key === 'format') label = 'フォーマット: ' + (state === 'FX' ? 'FX対応' : 'DX専用');
+        else if (f.key === 'format') {
+          label =
+            'フォーマット: ' +
+            (state === 'FX' ? `${formatLabels.fx}対応` : `${formatLabels.dx}専用`);
+        }
         else if (f.key === 'manufacturer') label = 'メーカー: ' + state;
         else label = f.label + ': ' + state;
       }

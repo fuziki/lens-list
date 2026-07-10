@@ -1,70 +1,21 @@
 {
+  "formatLabels": { "fx": "フルサイズ", "dx": "APS-C" },
+  "cropFactor": 1.6,
   "focalLengthMarkers": [
-    {
-      "fxMm": 0,
-      "dxMm": 0,
-      "spacingToNext": 40
-    },
-    {
-      "fxMm": 12,
-      "dxMm": 18,
-      "spacingToNext": 120
-    },
-    {
-      "fxMm": 24,
-      "dxMm": 36,
-      "spacingToNext": 140
-    },
-    {
-      "fxMm": 35,
-      "dxMm": 52,
-      "spacingToNext": 140
-    },
-    {
-      "fxMm": 50,
-      "dxMm": 75,
-      "spacingToNext": 140
-    },
-    {
-      "fxMm": 70,
-      "dxMm": 105,
-      "spacingToNext": 80
-    },
-    {
-      "fxMm": 85,
-      "dxMm": 128,
-      "spacingToNext": 170
-    },
-    {
-      "fxMm": 135,
-      "dxMm": 203,
-      "spacingToNext": 130
-    },
-    {
-      "fxMm": 200,
-      "dxMm": 300,
-      "spacingToNext": 90
-    },
-    {
-      "fxMm": 300,
-      "dxMm": 450,
-      "spacingToNext": 90
-    },
-    {
-      "fxMm": 400,
-      "dxMm": 600,
-      "spacingToNext": 180
-    },
-    {
-      "fxMm": 600,
-      "dxMm": 900,
-      "spacingToNext": 180
-    },
-    {
-      "fxMm": 800,
-      "dxMm": 1200,
-      "spacingToNext": 0
-    }
+    { "fxMm": 0, "dxMm": 0, "spacingToNext": 220 },
+    { "fxMm": 12, "dxMm": 19, "spacingToNext": 120 },
+    { "fxMm": 24, "dxMm": 38, "spacingToNext": 140 },
+    { "fxMm": 35, "dxMm": 56, "spacingToNext": 140 },
+    { "fxMm": 50, "dxMm": 80, "spacingToNext": 140 },
+    { "fxMm": 70, "dxMm": 112, "spacingToNext": 80 },
+    { "fxMm": 85, "dxMm": 136, "spacingToNext": 170 },
+    { "fxMm": 135, "dxMm": 216, "spacingToNext": 130 },
+    { "fxMm": 200, "dxMm": 320, "spacingToNext": 90 },
+    { "fxMm": 300, "dxMm": 480, "spacingToNext": 90 },
+    { "fxMm": 400, "dxMm": 640, "spacingToNext": 180 },
+    { "fxMm": 600, "dxMm": 960, "spacingToNext": 180 },
+    { "fxMm": 800, "dxMm": 1280, "spacingToNext": 180 },
+    { "fxMm": 1200, "dxMm": 1920, "spacingToNext": 0 }
   ],
   "rightPaddingPx": 120,
   "sectionLabelWidthPx": 44,
@@ -94,7 +45,7 @@
   "displayAttributes": [
     {
       "key": "dxFocalLength",
-      "label": "DX焦点距離",
+      "label": "APS-C焦点距離",
       "unit": "",
       "format": "dxFocalLength"
     },
@@ -117,12 +68,6 @@
       "format": "date"
     },
     {
-      "key": "campaignCashbackJpy",
-      "label": "キャンペーン（2026夏）2026年6月19日（金）〜7月27日（月）",
-      "unit": "",
-      "format": "campaign"
-    },
-    {
       "key": "rentalAvailable",
       "label": "レンタル",
       "unit": "",
@@ -135,27 +80,14 @@
       "label": "焦点距離",
       "type": "range",
       "unit": "mm",
-      "min": 12,
-      "max": 800
+      "min": 7,
+      "max": 1200
     },
     {
       "key": "maxAperture",
       "label": "最大絞り",
       "type": "select",
-      "options": [
-        0.95,
-        1.2,
-        1.4,
-        1.7,
-        1.8,
-        2.0,
-        2.8,
-        3.5,
-        4.0,
-        4.5,
-        5.6,
-        6.3
-      ]
+      "options": [1.2, 1.4, 1.8, 2.0, 2.8, 3.5, 4.0, 4.5, 5.0, 5.6, 6.3, 8.0, 11]
     },
     {
       "key": "priceJpy",
@@ -173,10 +105,7 @@
       "key": "format",
       "label": "フォーマット",
       "type": "select",
-      "options": [
-        "FX",
-        "DX"
-      ]
+      "options": ["FX", "DX"]
     },
     {
       "key": "imageStabilization",
@@ -187,11 +116,11 @@
       "key": "manufacturer",
       "label": "メーカー",
       "type": "select",
-      "options": ["ニコン", "タムロン", "シグマ"]
+      "options": ["キヤノン", "シグマ", "タムロン"]
     },
     {
       "key": "sLine",
-      "label": "Sライン",
+      "label": "Lレンズ",
       "type": "toggle"
     }
   ]

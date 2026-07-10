@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import type { Lens, AppConfig } from '../types';
-import { formatAttributeValue, isNew } from '../lib/formatters';
+import { formatAttributeValue, getFormatLabels, isNew } from '../lib/formatters';
 
 interface Props {
   lens: Lens | null;
@@ -55,7 +55,9 @@ export function LensDetailModal({ lens, config, onClose }: Props) {
                 </div>
                 <div className="lens-detail-row">
                   <span className="lens-detail-label">フォーマット</span>
-                  <span className="lens-detail-value">{lens.format}</span>
+                  <span className="lens-detail-value">
+                    {lens.format === 'FX' ? getFormatLabels(config).fx : getFormatLabels(config).dx}
+                  </span>
                 </div>
                 <div className="lens-detail-row">
                   <span className="lens-detail-label">焦点距離</span>
@@ -68,7 +70,7 @@ export function LensDetailModal({ lens, config, onClose }: Props) {
               </div>
               <div className="lens-detail-section">
                 {config.displayAttributes.map(attr => {
-                  const value = formatAttributeValue(lens, attr);
+                  const value = formatAttributeValue(lens, attr, config.cropFactor);
                   const isEmpty = value === '—' || value === '×';
                   return (
                     <div key={attr.key} className="lens-detail-row">

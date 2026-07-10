@@ -4,6 +4,8 @@ import { useAppData } from './hooks/useAppData';
 import { useActiveAttributes } from './hooks/useActiveAttributes';
 import { useFilterState } from './hooks/useFilterState';
 import { buildGeometry } from './lib/geometry';
+import { resolveMount } from './lib/mounts';
+import type { MountDef } from './lib/mounts';
 import { TopBar } from './components/TopBar';
 import { SettingsModal } from './components/SettingsModal';
 import { LensDetailModal } from './components/LensDetailModal';
@@ -13,7 +15,12 @@ import type { AppConfig, LensData, Lens } from './types';
 import './styles/app.css';
 
 export function App() {
-  const appData = useAppData();
+  const mount = useMemo(() => resolveMount(), []);
+  const appData = useAppData(mount.id);
+
+  useEffect(() => {
+    document.title = `lens-list | ${mount.label}`;
+  }, [mount]);
 
   if (appData.status === 'loading') {
     return <div style={{ padding: 24, color: '#666' }}>読み込み中...</div>;
@@ -27,10 +34,10 @@ export function App() {
     );
   }
 
-  return <AppInner config={appData.config} lensData={appData.lensData} />;
+  return <AppInner mount={mount} config={appData.config} lensData={appData.lensData} />;
 }
 
-function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData }) {
+function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppConfig; lensData: LensData }) {
   const tableInnerRef = useRef<HTMLDivElement>(null);
   const tableWrapperRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
@@ -54,7 +61,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
         scrollY: 0,
       });
       const link = document.createElement('a');
-      link.download = 'lens-list.png';
+      link.download = `lens-list-${mount.id}.png`;
       link.href = canvas.toDataURL('image/png');
       link.click();
     } finally {
@@ -62,7 +69,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
       wrapper.scrollTop = savedScrollTop;
       setSaving(false);
     }
-  }, [saving]);
+  }, [saving, mount.id]);
 
   const showRental = useMemo(
     () => new URLSearchParams(window.location.search).get('show_rental') === '1',
@@ -104,6 +111,7 @@ function AppInner({ config, lensData }: { config: AppConfig; lensData: LensData 
   return (
     <div id="app" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <TopBar
+        mount={mount}
         onOpenSettings={() => setSettingsOpen(true)}
         onSaveImage={handleSaveImage}
         saving={saving}

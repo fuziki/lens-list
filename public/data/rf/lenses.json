@@ -1,0 +1,1224 @@
+{
+  "lastUpdated": "2026-07-09",
+  "sections": [
+    {
+      "id": "prime",
+      "label": "単焦点レンズ",
+      "rows": [
+        {
+          "id": "prime-row-0",
+          "lenses": [
+            {
+              "id": "rf50mm-f1.2-l-usm",
+              "name": "RF50mm F1.2 L USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.2,
+              "weightG": 950,
+              "priceJpy": 368500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf85mm-f1.2-l-usm",
+              "name": "RF85mm F1.2 L USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.2,
+              "weightG": 1190,
+              "priceJpy": 424600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf400mm-f2.8-l-is-usm",
+              "name": "RF400mm F2.8 L IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 400,
+              "focalLengthFxMm": 400,
+              "maxAperture": 2.8,
+              "weightG": 2890,
+              "priceJpy": 1815000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf800mm-f5.6-l-is-usm",
+              "name": "RF800mm F5.6 L IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 800,
+              "focalLengthFxMm": 800,
+              "maxAperture": 5.6,
+              "weightG": 3140,
+              "priceJpy": 2695000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-1",
+          "lenses": [
+            {
+              "id": "rf85mm-f1.2-l-usm-ds",
+              "name": "RF85mm F1.2 L USM DS",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.2,
+              "weightG": 1190,
+              "priceJpy": 495000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf600mm-f4-l-is-usm",
+              "name": "RF600mm F4 L IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 600,
+              "focalLengthFxMm": 600,
+              "maxAperture": 4,
+              "weightG": 3090,
+              "priceJpy": 1969000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf1200mm-f8-l-is-usm",
+              "name": "RF1200mm F8 L IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 1200,
+              "focalLengthFxMm": 1200,
+              "maxAperture": 8,
+              "weightG": 3340,
+              "priceJpy": 3168000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-2",
+          "lenses": [
+            {
+              "id": "rf14mm-f1.4-l-vcm",
+              "name": "RF14mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 14,
+              "focalLengthFxMm": 14,
+              "maxAperture": 1.4,
+              "weightG": 578,
+              "priceJpy": 368500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf35mm-f1.4-l-vcm",
+              "name": "RF35mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.4,
+              "weightG": 555,
+              "priceJpy": 260700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf85mm-f1.4-l-vcm",
+              "name": "RF85mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 1.4,
+              "weightG": 636,
+              "priceJpy": 236500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-3",
+          "lenses": [
+            {
+              "id": "rf20mm-f1.4-l-vcm",
+              "name": "RF20mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 20,
+              "focalLengthFxMm": 20,
+              "maxAperture": 1.4,
+              "weightG": 510,
+              "priceJpy": 292600,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf50mm-f1.4-l-vcm",
+              "name": "RF50mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.4,
+              "weightG": 580,
+              "priceJpy": 243100,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf135mm-f1.8-l-is-usm",
+              "name": "RF135mm F1.8 L IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 135,
+              "focalLengthFxMm": 135,
+              "maxAperture": 1.8,
+              "weightG": 935,
+              "priceJpy": 348700,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "prime-row-4",
+          "lenses": [
+            {
+              "id": "rf24mm-f1.4-l-vcm",
+              "name": "RF24mm F1.4 L VCM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.4,
+              "weightG": 515,
+              "priceJpy": 260700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf600mm-f11-is-stm",
+              "name": "RF600mm F11 IS STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 600,
+              "focalLengthFxMm": 600,
+              "maxAperture": 11,
+              "weightG": 930,
+              "priceJpy": 123200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf800mm-f11-is-stm",
+              "name": "RF800mm F11 IS STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 800,
+              "focalLengthFxMm": 800,
+              "maxAperture": 11,
+              "weightG": 1260,
+              "priceJpy": 152900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-5",
+          "lenses": [
+            {
+              "id": "rf24mm-f1.8-macro-is-stm",
+              "name": "RF24mm F1.8 MACRO IS STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 24,
+              "focalLengthFxMm": 24,
+              "maxAperture": 1.8,
+              "weightG": 270,
+              "priceJpy": 103400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf85mm-f2-macro-is-stm",
+              "name": "RF85mm F2 MACRO IS STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 85,
+              "focalLengthFxMm": 85,
+              "maxAperture": 2,
+              "weightG": 500,
+              "priceJpy": 100100,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "prime-row-6",
+          "lenses": [
+            {
+              "id": "rf35mm-f1.8-macro-is-stm",
+              "name": "RF35mm F1.8 MACRO IS STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 35,
+              "focalLengthFxMm": 35,
+              "maxAperture": 1.8,
+              "weightG": 305,
+              "priceJpy": 88000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf100mm-f2.8-l-macro-is-usm",
+              "name": "RF100mm F2.8 L MACRO IS USM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 100,
+              "focalLengthFxMm": 100,
+              "maxAperture": 2.8,
+              "weightG": 730,
+              "priceJpy": 192500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compact-prime",
+      "label": "薄型単焦点レンズ",
+      "rows": [
+        {
+          "id": "compact-prime-row-0",
+          "lenses": [
+            {
+              "id": "rf16mm-f2.8-stm",
+              "name": "RF16mm F2.8 STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 16,
+              "focalLengthFxMm": 16,
+              "maxAperture": 2.8,
+              "weightG": 165,
+              "priceJpy": 44550,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf45mm-f1.2-stm",
+              "name": "RF45mm F1.2 STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 45,
+              "focalLengthFxMm": 45,
+              "maxAperture": 1.2,
+              "weightG": 346,
+              "priceJpy": 66000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "compact-prime-row-1",
+          "lenses": [
+            {
+              "id": "rf28mm-f2.8-stm",
+              "name": "RF28mm F2.8 STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 28,
+              "focalLengthFxMm": 28,
+              "maxAperture": 2.8,
+              "weightG": 120,
+              "priceJpy": 51700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf50mm-f1.8-stm",
+              "name": "RF50mm F1.8 STM",
+              "type": "prime",
+              "format": "FX",
+              "focalLengthMm": 50,
+              "focalLengthFxMm": 50,
+              "maxAperture": 1.8,
+              "weightG": 160,
+              "priceJpy": 34980,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "label": "ズームレンズ",
+      "rows": [
+        {
+          "id": "zoom-row-0",
+          "lenses": [
+            {
+              "id": "rf28-70mm-f2-l-usm",
+              "name": "RF28-70mm F2 L USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2,
+              "weightG": 1430,
+              "priceJpy": 469700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf100-300mm-f2.8-l-is-usm",
+              "name": "RF100-300mm F2.8 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 2.8,
+              "weightG": 2590,
+              "priceJpy": 1549900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-1",
+          "lenses": [
+            {
+              "id": "rf24-70mm-f2.8-l-is-usm",
+              "name": "RF24-70mm F2.8 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 900,
+              "priceJpy": 363000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf70-200mm-f2.8-l-is-usm",
+              "name": "RF70-200mm F2.8 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 2.8,
+              "weightG": 1070,
+              "priceJpy": 421300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-2",
+          "lenses": [
+            {
+              "id": "rf15-35mm-f2.8-l-is-usm",
+              "name": "RF15-35mm F2.8 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 15,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 15,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 2.8,
+              "weightG": 840,
+              "priceJpy": 363000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf70-200mm-f2.8-l-is-usm-z",
+              "name": "RF70-200mm F2.8 L IS USM Z",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 2.8,
+              "weightG": 1110,
+              "priceJpy": 508200,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-3",
+          "lenses": [
+            {
+              "id": "rf16-28mm-f2.8-is-stm",
+              "name": "RF16-28mm F2.8 IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 28,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 28,
+              "maxAperture": 2.8,
+              "weightG": 445,
+              "priceJpy": 196900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf28-70mm-f2.8-is-stm",
+              "name": "RF28-70mm F2.8 IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 28,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 28,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 495,
+              "priceJpy": 196900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-4",
+          "lenses": [
+            {
+              "id": "rf7-14mm-f2.8-3.5-l-fisheye-stm",
+              "name": "RF7-14mm F2.8-3.5 L FISHEYE STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 7,
+              "focalLengthMaxMm": 14,
+              "focalLengthMinFxMm": 7,
+              "focalLengthMaxFxMm": 14,
+              "maxAperture": 2.8,
+              "weightG": 470,
+              "priceJpy": 258500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf24-105mm-f2.8-l-is-usm-z",
+              "name": "RF24-105mm F2.8 L IS USM Z",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 2.8,
+              "weightG": 1330,
+              "priceJpy": 510400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-5",
+          "lenses": [
+            {
+              "id": "rf14-35mm-f4-l-is-usm",
+              "name": "RF14-35mm F4 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 14,
+              "focalLengthMaxMm": 35,
+              "focalLengthMinFxMm": 14,
+              "focalLengthMaxFxMm": 35,
+              "maxAperture": 4,
+              "weightG": 540,
+              "priceJpy": 243100,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf70-200mm-f4-l-is-usm",
+              "name": "RF70-200mm F4 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 70,
+              "focalLengthMaxMm": 200,
+              "focalLengthMinFxMm": 70,
+              "focalLengthMaxFxMm": 200,
+              "maxAperture": 4,
+              "weightG": 695,
+              "priceJpy": 243100,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-6",
+          "lenses": [
+            {
+              "id": "rf10-20mm-f4-l-is-stm",
+              "name": "RF10-20mm F4 L IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 10,
+              "focalLengthMaxMm": 20,
+              "focalLengthMinFxMm": 10,
+              "focalLengthMaxFxMm": 20,
+              "maxAperture": 4,
+              "weightG": 570,
+              "priceJpy": 383900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf24-105mm-f4-l-is-usm",
+              "name": "RF24-105mm F4 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 4,
+              "weightG": 700,
+              "priceJpy": 198000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf200-800mm-f6.3-9-is-usm",
+              "name": "RF200-800mm F6.3-9 IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 200,
+              "focalLengthMaxMm": 800,
+              "focalLengthMinFxMm": 200,
+              "focalLengthMaxFxMm": 800,
+              "maxAperture": 6.3,
+              "weightG": 2050,
+              "priceJpy": 341000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-7",
+          "lenses": [
+            {
+              "id": "rf20-50mm-f4-l-is-usm-pz",
+              "name": "RF20-50mm F4 L IS USM PZ",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 20,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 20,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 4,
+              "weightG": 420,
+              "priceJpy": 213400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            },
+            {
+              "id": "rf100-500mm-f4.5-7.1-l-is-usm",
+              "name": "RF100-500mm F4.5-7.1 L IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 500,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 500,
+              "maxAperture": 4.5,
+              "weightG": 1370,
+              "priceJpy": 427900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン",
+              "sLine": true
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-8",
+          "lenses": [
+            {
+              "id": "rf15-30mm-f4.5-6.3-is-stm",
+              "name": "RF15-30mm F4.5-6.3 IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 15,
+              "focalLengthMaxMm": 30,
+              "focalLengthMinFxMm": 15,
+              "focalLengthMaxFxMm": 30,
+              "maxAperture": 4.5,
+              "weightG": 390,
+              "priceJpy": 91300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf100-400mm-f5.6-8-is-usm",
+              "name": "RF100-400mm F5.6-8 IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 100,
+              "focalLengthMaxMm": 400,
+              "focalLengthMinFxMm": 100,
+              "focalLengthMaxFxMm": 400,
+              "maxAperture": 5.6,
+              "weightG": 635,
+              "priceJpy": 126500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-9",
+          "lenses": [
+            {
+              "id": "rf24-105mm-f4-7.1-is-stm",
+              "name": "RF24-105mm F4-7.1 IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 105,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 105,
+              "maxAperture": 4,
+              "weightG": 395,
+              "priceJpy": 73150,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-10",
+          "lenses": [
+            {
+              "id": "rf24-50mm-f4.5-6.3-is-stm",
+              "name": "RF24-50mm F4.5-6.3 IS STM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 4.5,
+              "weightG": 210,
+              "priceJpy": 53900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf75-300mm-f4-5.6",
+              "name": "RF75-300mm F4-5.6",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 75,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 75,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 4,
+              "weightG": 507,
+              "priceJpy": 35200,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-11",
+          "lenses": [
+            {
+              "id": "rf24-240mm-f4-6.3-is-usm",
+              "name": "RF24-240mm F4-6.3 IS USM",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 24,
+              "focalLengthMaxMm": 240,
+              "focalLengthMinFxMm": 24,
+              "focalLengthMaxFxMm": 240,
+              "maxAperture": 4,
+              "weightG": 750,
+              "priceJpy": 158400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-12",
+          "lenses": [
+            {
+              "id": "rf-s18-150mm-f3.5-6.3-is-stm",
+              "name": "RF-S18-150mm F3.5-6.3 IS STM",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 150,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 150,
+              "maxAperture": 3.5,
+              "weightG": 310,
+              "priceJpy": 69300,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-13",
+          "lenses": [
+            {
+              "id": "rf-s18-45mm-f4.5-6.3-is-stm",
+              "name": "RF-S18-45mm F4.5-6.3 IS STM",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 45,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 45,
+              "maxAperture": 4.5,
+              "weightG": 130,
+              "priceJpy": 42900,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            },
+            {
+              "id": "rf-s55-210mm-f5-7.1-is-stm",
+              "name": "RF-S55-210mm F5-7.1 IS STM",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 55,
+              "focalLengthMaxMm": 210,
+              "focalLengthMinFxMm": 55,
+              "focalLengthMaxFxMm": 210,
+              "maxAperture": 5,
+              "weightG": 270,
+              "priceJpy": 60500,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-14",
+          "lenses": [
+            {
+              "id": "rf-s10-18mm-f4.5-6.3-is-stm",
+              "name": "RF-S10-18mm F4.5-6.3 IS STM",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 10,
+              "focalLengthMaxMm": 18,
+              "focalLengthMinFxMm": 10,
+              "focalLengthMaxFxMm": 18,
+              "maxAperture": 4.5,
+              "weightG": 150,
+              "priceJpy": 55000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        },
+        {
+          "id": "zoom-row-15",
+          "lenses": [
+            {
+              "id": "rf-s14-30mm-f4-6.3-is-stm-pz",
+              "name": "RF-S14-30mm F4-6.3 IS STM PZ",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 14,
+              "focalLengthMaxMm": 30,
+              "focalLengthMinFxMm": 14,
+              "focalLengthMaxFxMm": 30,
+              "maxAperture": 4,
+              "weightG": 180,
+              "priceJpy": 55000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "キヤノン"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamron",
+      "label": "タムロン",
+      "rows": [
+        {
+          "id": "tamron-row-0",
+          "lenses": [
+            {
+              "id": "11-20mm-f-2.8-di-iii-a-rxd",
+              "name": "11-20mm F/2.8 Di III-A RXD",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 11,
+              "focalLengthMaxMm": 20,
+              "focalLengthMinFxMm": 11,
+              "focalLengthMaxFxMm": 20,
+              "maxAperture": 2.8,
+              "weightG": 340,
+              "priceJpy": 106700,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "タムロン"
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-1",
+          "lenses": [
+            {
+              "id": "17-70mm-f-2.8-di-iii-a-vc-rxd",
+              "name": "17-70mm F/2.8 Di III-A VC RXD",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 17,
+              "focalLengthMaxMm": 70,
+              "focalLengthMinFxMm": 17,
+              "focalLengthMaxFxMm": 70,
+              "maxAperture": 2.8,
+              "weightG": 530,
+              "priceJpy": 143000,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "タムロン"
+            }
+          ]
+        },
+        {
+          "id": "tamron-row-2",
+          "lenses": [
+            {
+              "id": "18-300mm-f-3.5-6.3-di-iii-a-vc-vxd",
+              "name": "18-300mm F/3.5-6.3 Di III-A VC VXD",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 3.5,
+              "weightG": 625,
+              "priceJpy": 92400,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "タムロン"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sigma",
+      "label": "シグマ",
+      "rows": [
+        {
+          "id": "sigma-row-0",
+          "lenses": [
+            {
+              "id": "12mm-f1.4-dc",
+              "name": "12mm F1.4 DC",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 12,
+              "focalLengthFxMm": 12,
+              "maxAperture": 1.4,
+              "weightG": 250,
+              "priceJpy": 99000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            },
+            {
+              "id": "30mm-f1.4-dc-dn",
+              "name": "30mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 30,
+              "focalLengthFxMm": 30,
+              "maxAperture": 1.4,
+              "weightG": 285,
+              "priceJpy": 55000,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            },
+            {
+              "id": "56mm-f1.4-dc-dn",
+              "name": "56mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 56,
+              "focalLengthFxMm": 56,
+              "maxAperture": 1.4,
+              "weightG": 290,
+              "priceJpy": 69300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-1",
+          "lenses": [
+            {
+              "id": "15mm-f1.4-dc",
+              "name": "15mm F1.4 DC",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 15,
+              "focalLengthFxMm": 15,
+              "maxAperture": 1.4,
+              "weightG": 240,
+              "priceJpy": 93500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-2",
+          "lenses": [
+            {
+              "id": "16mm-f1.4-dc-dn",
+              "name": "16mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 16,
+              "focalLengthFxMm": 16,
+              "maxAperture": 1.4,
+              "weightG": 415,
+              "priceJpy": 69300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-3",
+          "lenses": [
+            {
+              "id": "23mm-f1.4-dc-dn",
+              "name": "23mm F1.4 DC DN",
+              "type": "prime",
+              "format": "DX",
+              "focalLengthMm": 23,
+              "focalLengthFxMm": 23,
+              "maxAperture": 1.4,
+              "weightG": 345,
+              "priceJpy": 69300,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-4",
+          "lenses": [
+            {
+              "id": "17-40mm-f1.8-dc",
+              "name": "17-40mm F1.8 DC",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 17,
+              "focalLengthMaxMm": 40,
+              "focalLengthMinFxMm": 17,
+              "focalLengthMaxFxMm": 40,
+              "maxAperture": 1.8,
+              "weightG": 560,
+              "priceJpy": 148500,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-5",
+          "lenses": [
+            {
+              "id": "10-18mm-f2.8-dc-dn",
+              "name": "10-18mm F2.8 DC DN",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 10,
+              "focalLengthMaxMm": 18,
+              "focalLengthMinFxMm": 10,
+              "focalLengthMaxFxMm": 18,
+              "maxAperture": 2.8,
+              "weightG": 270,
+              "priceJpy": 107800,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-6",
+          "lenses": [
+            {
+              "id": "18-50mm-f2.8-dc-dn",
+              "name": "18-50mm F2.8 DC DN",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 18,
+              "focalLengthMaxMm": 50,
+              "focalLengthMinFxMm": 18,
+              "focalLengthMaxFxMm": 50,
+              "maxAperture": 2.8,
+              "weightG": 300,
+              "priceJpy": 79200,
+              "rentalAvailable": null,
+              "imageStabilization": false,
+              "manufacturer": "シグマ"
+            }
+          ]
+        },
+        {
+          "id": "sigma-row-7",
+          "lenses": [
+            {
+              "id": "16-300mm-f3.5-6.7-dc-os",
+              "name": "16-300mm F3.5-6.7 DC OS",
+              "type": "zoom",
+              "format": "DX",
+              "focalLengthMinMm": 16,
+              "focalLengthMaxMm": 300,
+              "focalLengthMinFxMm": 16,
+              "focalLengthMaxFxMm": 300,
+              "maxAperture": 3.5,
+              "weightG": 625,
+              "priceJpy": 118800,
+              "rentalAvailable": null,
+              "imageStabilization": true,
+              "manufacturer": "シグマ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import type { AppConfig, GeometryContext } from '../../types';
+import { getFormatLabels } from '../../lib/formatters';
 
 interface Props {
   config: AppConfig;
@@ -8,6 +9,7 @@ interface Props {
 export function TableHeader({ config, geometry }: Props) {
   const { markers } = geometry;
   const { headerFontSizePx } = config.typography;
+  const formatLabels = getFormatLabels(config);
 
   return (
     <div className="table-header">
@@ -16,8 +18,12 @@ export function TableHeader({ config, geometry }: Props) {
         className="header-corner"
         style={{ width: config.sectionLabelWidthPx }}
       >
-        <span className="header-fx-label">FX</span>
-        <span className="header-dx-label">DX</span>
+        <span className="header-fx-label" style={formatLabels.fx.length > 3 ? { fontSize: 8 } : undefined}>
+          {formatLabels.fx}
+        </span>
+        <span className="header-dx-label" style={formatLabels.dx.length > 3 ? { fontSize: 8 } : undefined}>
+          {formatLabels.dx}
+        </span>
       </div>
 
       {/* Column labels */}
