@@ -10,7 +10,6 @@ export function useFilterState(config: AppConfig, lensData: LensData) {
   );
 
   const [filterState, setFilterState] = useState<FilterState>(defaultState);
-  const [filterPanelOpen, setFilterPanelOpen] = useState(false);
 
   const setFilterValue = useCallback((key: string, value: FilterStateValue) => {
     setFilterState(prev => ({ ...prev, [key]: value }));
@@ -29,8 +28,6 @@ export function useFilterState(config: AppConfig, lensData: LensData) {
     filterState,
     setFilterValue,
     resetFilter,
-    filterPanelOpen,
-    setFilterPanelOpen,
     activeChips,
   };
 }

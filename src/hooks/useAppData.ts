@@ -15,11 +15,17 @@ export function useAppData(mountId: MountId): AppDataState {
     const signal = controller.signal;
     const dataBase = `${import.meta.env.BASE_URL}data/${mountId}`;
 
+    const fetchJson = async <T,>(path: string): Promise<T> => {
+      const res = await fetch(path, { signal });
+      if (!res.ok) throw new Error(`${path} の取得に失敗しました (${res.status})`);
+      return res.json() as Promise<T>;
+    };
+
     (async () => {
       try {
         const [config, lensData] = await Promise.all([
-          fetch(`${dataBase}/config.json`, { signal }).then(r => r.json() as Promise<AppConfig>),
-          fetch(`${dataBase}/lenses.json`, { signal }).then(r => r.json() as Promise<LensData>),
+          fetchJson<AppConfig>(`${dataBase}/config.json`),
+          fetchJson<LensData>(`${dataBase}/lenses.json`),
         ]);
         if (!signal.aborted) {
           setState({ status: 'ok', config, lensData });

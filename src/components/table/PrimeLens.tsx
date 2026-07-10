@@ -24,6 +24,15 @@ export function PrimeLens({ lens, config, geometry, activeAttributes, showNewBad
       data-lens-id={lens.id}
       style={{ left: cx - dotR, top: TOP_PAD, width: dotD, overflow: 'visible' }}
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      aria-label={lens.name}
+      onKeyDown={e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
     >
       <div
         className="lens-dot"

@@ -1,6 +1,6 @@
 # Lens List
 
-A web app that visualizes the Nikon Z-mount lens lineup along a focal length axis.
+A web app that visualizes lens lineups (Nikon Z, Sony E, Canon RF mounts) along a focal length axis.
 
 ## Features
 
@@ -17,7 +17,7 @@ A web app that visualizes the Nikon Z-mount lens lineup along a focal length axi
 
 ## Customizing Data
 
-Edit the JSON files in `public/data/` to update lens data or display settings without touching the code.
+Each mount has its own data directory: `public/data/<mount>/` (`z`, `e`, `rf`). Edit the JSON files there to update lens data or display settings without touching the code.
 
 - `lenses.json` — lens data (sections, rows, per-lens attributes)
 - `config.json` — display settings (colors, fonts, filter definitions, etc.)

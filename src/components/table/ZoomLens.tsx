@@ -24,6 +24,15 @@ export function ZoomLens({ lens, config, geometry, activeAttributes, showNewBadg
       data-lens-id={lens.id}
       style={{ left: x1 + 1, top: TOP_PAD, width: barW }}
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      aria-label={lens.name}
+      onKeyDown={e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
     >
       <div
         className="zoom-bar"
