@@ -50,7 +50,7 @@ export function TopBar({ mount, onOpenSettings, onSaveImage, saving }: Props) {
               <a
                 key={m.id}
                 className={`mount-selector-item${m.id === mount.id ? ' active' : ''}`}
-                href={mountPath(m.id)}
+                href={mountPath(m.id) + window.location.search}
                 role="menuitem"
                 aria-current={m.id === mount.id ? 'page' : undefined}
               >

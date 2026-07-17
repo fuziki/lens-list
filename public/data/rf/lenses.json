@@ -18,7 +18,7 @@
               "maxAperture": 1.2,
               "weightG": 950,
               "priceJpy": 368500,
-              "rentalAvailable": null,
+              "rentalAvailable": 4000,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -33,7 +33,7 @@
               "maxAperture": 1.2,
               "weightG": 1190,
               "priceJpy": 424600,
-              "rentalAvailable": null,
+              "rentalAvailable": 4000,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -48,7 +48,7 @@
               "maxAperture": 2.8,
               "weightG": 2890,
               "priceJpy": 1815000,
-              "rentalAvailable": null,
+              "rentalAvailable": 25000,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -63,7 +63,7 @@
               "maxAperture": 5.6,
               "weightG": 3140,
               "priceJpy": 2695000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -83,7 +83,7 @@
               "maxAperture": 1.2,
               "weightG": 1190,
               "priceJpy": 495000,
-              "rentalAvailable": null,
+              "rentalAvailable": 5500,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -98,7 +98,7 @@
               "maxAperture": 4,
               "weightG": 3090,
               "priceJpy": 1969000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -113,7 +113,7 @@
               "maxAperture": 8,
               "weightG": 3340,
               "priceJpy": 3168000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -133,7 +133,7 @@
               "maxAperture": 1.4,
               "weightG": 578,
               "priceJpy": 368500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -148,7 +148,7 @@
               "maxAperture": 1.4,
               "weightG": 555,
               "priceJpy": 260700,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -163,7 +163,7 @@
               "maxAperture": 1.4,
               "weightG": 636,
               "priceJpy": 236500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -183,7 +183,7 @@
               "maxAperture": 1.4,
               "weightG": 510,
               "priceJpy": 292600,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -198,7 +198,7 @@
               "maxAperture": 1.4,
               "weightG": 580,
               "priceJpy": 243100,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -213,7 +213,7 @@
               "maxAperture": 1.8,
               "weightG": 935,
               "priceJpy": 348700,
-              "rentalAvailable": null,
+              "rentalAvailable": 4900,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -233,7 +233,7 @@
               "maxAperture": 1.4,
               "weightG": 515,
               "priceJpy": 260700,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -248,7 +248,7 @@
               "maxAperture": 11,
               "weightG": 930,
               "priceJpy": 123200,
-              "rentalAvailable": null,
+              "rentalAvailable": 1600,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -262,7 +262,7 @@
               "maxAperture": 11,
               "weightG": 1260,
               "priceJpy": 152900,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -281,7 +281,7 @@
               "maxAperture": 1.8,
               "weightG": 270,
               "priceJpy": 103400,
-              "rentalAvailable": null,
+              "rentalAvailable": 1400,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -295,7 +295,7 @@
               "maxAperture": 2,
               "weightG": 500,
               "priceJpy": 100100,
-              "rentalAvailable": null,
+              "rentalAvailable": 2400,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -314,7 +314,7 @@
               "maxAperture": 1.8,
               "weightG": 305,
               "priceJpy": 88000,
-              "rentalAvailable": null,
+              "rentalAvailable": 2000,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -328,7 +328,7 @@
               "maxAperture": 2.8,
               "weightG": 730,
               "priceJpy": 192500,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -354,7 +354,7 @@
               "maxAperture": 2.8,
               "weightG": 165,
               "priceJpy": 44550,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": false,
               "manufacturer": "キヤノン"
             },
@@ -368,7 +368,7 @@
               "maxAperture": 1.2,
               "weightG": 346,
               "priceJpy": 66000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "キヤノン"
             }
@@ -387,7 +387,7 @@
               "maxAperture": 2.8,
               "weightG": 120,
               "priceJpy": 51700,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "キヤノン"
             },
@@ -401,7 +401,7 @@
               "maxAperture": 1.8,
               "weightG": 160,
               "priceJpy": 34980,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": false,
               "manufacturer": "キヤノン"
             }
@@ -428,7 +428,7 @@
               "maxAperture": 2,
               "weightG": 1430,
               "priceJpy": 469700,
-              "rentalAvailable": null,
+              "rentalAvailable": 5300,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -445,7 +445,7 @@
               "maxAperture": 2.8,
               "weightG": 2590,
               "priceJpy": 1549900,
-              "rentalAvailable": null,
+              "rentalAvailable": 21100,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -467,7 +467,7 @@
               "maxAperture": 2.8,
               "weightG": 900,
               "priceJpy": 363000,
-              "rentalAvailable": null,
+              "rentalAvailable": 3600,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -484,7 +484,7 @@
               "maxAperture": 2.8,
               "weightG": 1070,
               "priceJpy": 421300,
-              "rentalAvailable": null,
+              "rentalAvailable": 3700,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -506,7 +506,7 @@
               "maxAperture": 2.8,
               "weightG": 840,
               "priceJpy": 363000,
-              "rentalAvailable": null,
+              "rentalAvailable": 3600,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -523,7 +523,7 @@
               "maxAperture": 2.8,
               "weightG": 1110,
               "priceJpy": 508200,
-              "rentalAvailable": null,
+              "rentalAvailable": 7700,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -545,7 +545,7 @@
               "maxAperture": 2.8,
               "weightG": 445,
               "priceJpy": 196900,
-              "rentalAvailable": null,
+              "rentalAvailable": 2400,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -561,7 +561,7 @@
               "maxAperture": 2.8,
               "weightG": 495,
               "priceJpy": 196900,
-              "rentalAvailable": null,
+              "rentalAvailable": 3000,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -582,7 +582,7 @@
               "maxAperture": 2.8,
               "weightG": 470,
               "priceJpy": 258500,
-              "rentalAvailable": null,
+              "rentalAvailable": 7200,
               "imageStabilization": false,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -599,7 +599,7 @@
               "maxAperture": 2.8,
               "weightG": 1330,
               "priceJpy": 510400,
-              "rentalAvailable": null,
+              "rentalAvailable": 6600,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -621,7 +621,7 @@
               "maxAperture": 4,
               "weightG": 540,
               "priceJpy": 243100,
-              "rentalAvailable": null,
+              "rentalAvailable": 4700,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -638,7 +638,7 @@
               "maxAperture": 4,
               "weightG": 695,
               "priceJpy": 243100,
-              "rentalAvailable": null,
+              "rentalAvailable": 2800,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -660,7 +660,7 @@
               "maxAperture": 4,
               "weightG": 570,
               "priceJpy": 383900,
-              "rentalAvailable": null,
+              "rentalAvailable": 4900,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -677,7 +677,7 @@
               "maxAperture": 4,
               "weightG": 700,
               "priceJpy": 198000,
-              "rentalAvailable": null,
+              "rentalAvailable": 2200,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -694,7 +694,7 @@
               "maxAperture": 6.3,
               "weightG": 2050,
               "priceJpy": 341000,
-              "rentalAvailable": null,
+              "rentalAvailable": 6600,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -715,7 +715,7 @@
               "maxAperture": 4,
               "weightG": 420,
               "priceJpy": 213400,
-              "rentalAvailable": null,
+              "rentalAvailable": 3600,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -732,7 +732,7 @@
               "maxAperture": 4.5,
               "weightG": 1370,
               "priceJpy": 427900,
-              "rentalAvailable": null,
+              "rentalAvailable": 6600,
               "imageStabilization": true,
               "manufacturer": "キヤノン",
               "sLine": true
@@ -754,7 +754,7 @@
               "maxAperture": 4.5,
               "weightG": 390,
               "priceJpy": 91300,
-              "rentalAvailable": null,
+              "rentalAvailable": 3400,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -770,7 +770,7 @@
               "maxAperture": 5.6,
               "weightG": 635,
               "priceJpy": 126500,
-              "rentalAvailable": null,
+              "rentalAvailable": 2600,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -791,7 +791,7 @@
               "maxAperture": 4,
               "weightG": 395,
               "priceJpy": 73150,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -812,7 +812,7 @@
               "maxAperture": 4.5,
               "weightG": 210,
               "priceJpy": 53900,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -828,7 +828,7 @@
               "maxAperture": 4,
               "weightG": 507,
               "priceJpy": 35200,
-              "rentalAvailable": null,
+              "rentalAvailable": 1500,
               "imageStabilization": false,
               "manufacturer": "キヤノン"
             }
@@ -849,7 +849,7 @@
               "maxAperture": 4,
               "weightG": 750,
               "priceJpy": 158400,
-              "rentalAvailable": null,
+              "rentalAvailable": 2800,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -870,7 +870,7 @@
               "maxAperture": 3.5,
               "weightG": 310,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -891,7 +891,7 @@
               "maxAperture": 4.5,
               "weightG": 130,
               "priceJpy": 42900,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             },
@@ -907,7 +907,7 @@
               "maxAperture": 5,
               "weightG": 270,
               "priceJpy": 60500,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -928,7 +928,7 @@
               "maxAperture": 4.5,
               "weightG": 150,
               "priceJpy": 55000,
-              "rentalAvailable": null,
+              "rentalAvailable": 1300,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -949,7 +949,7 @@
               "maxAperture": 4,
               "weightG": 180,
               "priceJpy": 55000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "キヤノン"
             }
@@ -976,7 +976,7 @@
               "maxAperture": 2.8,
               "weightG": 340,
               "priceJpy": 106700,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "タムロン"
             }
@@ -997,7 +997,7 @@
               "maxAperture": 2.8,
               "weightG": 530,
               "priceJpy": 143000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -1018,7 +1018,7 @@
               "maxAperture": 3.5,
               "weightG": 625,
               "priceJpy": 92400,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "タムロン"
             }
@@ -1043,7 +1043,7 @@
               "maxAperture": 1.4,
               "weightG": 250,
               "priceJpy": 99000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             },
@@ -1057,7 +1057,7 @@
               "maxAperture": 1.4,
               "weightG": 285,
               "priceJpy": 55000,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             },
@@ -1071,7 +1071,7 @@
               "maxAperture": 1.4,
               "weightG": 290,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1090,7 +1090,7 @@
               "maxAperture": 1.4,
               "weightG": 240,
               "priceJpy": 93500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1109,7 +1109,7 @@
               "maxAperture": 1.4,
               "weightG": 415,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1128,7 +1128,7 @@
               "maxAperture": 1.4,
               "weightG": 345,
               "priceJpy": 69300,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1149,7 +1149,7 @@
               "maxAperture": 1.8,
               "weightG": 560,
               "priceJpy": 148500,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1170,7 +1170,7 @@
               "maxAperture": 2.8,
               "weightG": 270,
               "priceJpy": 107800,
-              "rentalAvailable": null,
+              "rentalAvailable": 1800,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1191,7 +1191,7 @@
               "maxAperture": 2.8,
               "weightG": 300,
               "priceJpy": 79200,
-              "rentalAvailable": null,
+              "rentalAvailable": 2300,
               "imageStabilization": false,
               "manufacturer": "シグマ"
             }
@@ -1212,7 +1212,7 @@
               "maxAperture": 3.5,
               "weightG": 625,
               "priceJpy": 118800,
-              "rentalAvailable": null,
+              "rentalAvailable": false,
               "imageStabilization": true,
               "manufacturer": "シグマ"
             }

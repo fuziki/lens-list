@@ -1063,6 +1063,30 @@
           ]
         },
         {
+          "id": "tamron-row-uw",
+          "lenses": [
+            {
+              "id": "tamron-12-20-2.8",
+              "name": "12-20mm F/2.8",
+              "type": "zoom",
+              "format": "FX",
+              "focalLengthMinMm": 12,
+              "focalLengthMaxMm": 20,
+              "focalLengthMinFxMm": 12,
+              "focalLengthMaxFxMm": 20,
+              "maxAperture": 2.8,
+              "weightG": 585,
+              "priceJpy": 399960,
+              "campaignCashbackJpy": false,
+              "rentalAvailable": false,
+              "imageStabilization": false,
+              "manufacturer": "タムロン",
+              "releaseDate": "2026-08-27",
+              "officialUrl": "https://www.tamron.com/jp/consumer/lenses/a084/"
+            }
+          ]
+        },
+        {
           "id": "tamron-row-1",
           "lenses": [
             {
