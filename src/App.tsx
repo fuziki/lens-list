@@ -9,10 +9,28 @@ import type { MountDef } from './lib/mounts';
 import { TopBar } from './components/TopBar';
 import { SettingsModal } from './components/SettingsModal';
 import { LensDetailModal } from './components/LensDetailModal';
+import { ImagePreviewModal } from './components/ImagePreviewModal';
 import { ChipBar } from './components/ChipBar';
 import { TableWrapper } from './components/table/TableWrapper';
 import type { AppConfig, LensData, Lens } from './types';
 import './styles/app.css';
+
+// iOS Safari は canvas の総ピクセル数が約 16.7M (4096x4096) を超えると
+// 空の画像を返すため、scale を上限内に収める
+const MAX_CANVAS_AREA = 16777216;
+
+function isMobileDevice(): boolean {
+  return window.matchMedia('(pointer: coarse)').matches;
+}
+
+function canvasToBlob(canvas: HTMLCanvasElement): Promise<Blob> {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob(
+      blob => (blob ? resolve(blob) : reject(new Error('画像の生成に失敗しました'))),
+      'image/png'
+    );
+  });
+}
 
 export function App() {
   const mount = useMemo(() => resolveMount(), []);
@@ -43,6 +61,7 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
   const [saving, setSaving] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [selectedLens, setSelectedLens] = useState<Lens | null>(null);
+  const [previewImageUrl, setPreviewImageUrl] = useState<string | null>(null);
 
   const handleSaveImage = useCallback(async () => {
     if (!tableInnerRef.current || !tableWrapperRef.current || saving) return;
@@ -53,23 +72,39 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
     wrapper.scrollLeft = 0;
     wrapper.scrollTop = 0;
     try {
-      const canvas = await html2canvas(tableInnerRef.current, {
+      const el = tableInnerRef.current;
+      const maxScale = Math.sqrt(MAX_CANVAS_AREA / (el.scrollWidth * el.scrollHeight));
+      const canvas = await html2canvas(el, {
         useCORS: true,
-        scale: window.devicePixelRatio,
+        scale: Math.min(window.devicePixelRatio, maxScale),
         logging: false,
         scrollX: 0,
         scrollY: 0,
       });
-      const link = document.createElement('a');
-      link.download = `lens-list-${mount.id}.png`;
-      link.href = canvas.toDataURL('image/png');
-      link.click();
+      const blob = await canvasToBlob(canvas);
+      const url = URL.createObjectURL(blob);
+      if (isMobileDevice()) {
+        setPreviewImageUrl(url);
+      } else {
+        const link = document.createElement('a');
+        link.download = `lens-list-${mount.id}.png`;
+        link.href = url;
+        link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 10000);
+      }
     } finally {
       wrapper.scrollLeft = savedScrollLeft;
       wrapper.scrollTop = savedScrollTop;
       setSaving(false);
     }
   }, [saving, mount.id]);
+
+  const closeImagePreview = useCallback(() => {
+    setPreviewImageUrl(url => {
+      if (url) URL.revokeObjectURL(url);
+      return null;
+    });
+  }, []);
 
   const showRental = useMemo(
     () => new URLSearchParams(window.location.search).get('show_rental') === '1',
@@ -144,6 +179,10 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
         lens={selectedLens}
         config={effectiveConfig}
         onClose={() => setSelectedLens(null)}
+      />
+      <ImagePreviewModal
+        imageUrl={previewImageUrl}
+        onClose={closeImagePreview}
       />
     </div>
   );
