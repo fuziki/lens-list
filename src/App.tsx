@@ -4,6 +4,7 @@ import { useAppData } from './hooks/useAppData';
 import { useActiveAttributes } from './hooks/useActiveAttributes';
 import { useFilterState } from './hooks/useFilterState';
 import { buildGeometry } from './lib/geometry';
+import { filterLensData } from './lib/filterLogic';
 import { resolveMount } from './lib/mounts';
 import type { MountDef } from './lib/mounts';
 import { TopBar } from './components/TopBar';
@@ -129,6 +130,11 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
     activeChips,
   } = useFilterState(effectiveConfig, lensData);
 
+  const visibleLensData = useMemo(
+    () => filterLensData(lensData, filterState, effectiveConfig.filters),
+    [lensData, filterState, effectiveConfig.filters]
+  );
+
   useEffect(() => {
     const root = document.documentElement;
     const c = config.colors;
@@ -137,6 +143,7 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
     root.style.setProperty('--color-section-label-bg', c.sectionLabelBackground);
     root.style.setProperty('--color-section-label-text', c.sectionLabelText);
     root.style.setProperty('--color-row-bg', c.rowBackground);
+    root.style.setProperty('--color-grid-line', c.gridLineColor);
     root.style.setProperty('--color-lens-dot', c.lensDot);
     root.style.setProperty('--color-zoom-bar', c.zoomBar);
     root.style.setProperty('--color-lens-name', c.lensNameText);
@@ -155,8 +162,7 @@ function AppInner({ mount, config, lensData }: { mount: MountDef; config: AppCon
       <TableWrapper
         config={effectiveConfig}
         geometry={geometry}
-        lensData={lensData}
-        filterState={filterState}
+        lensData={visibleLensData}
         activeAttributes={activeAttributes}
         rowHeight={rowHeight}
         showNewBadge={showNewBadge}

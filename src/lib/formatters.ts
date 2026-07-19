@@ -2,6 +2,14 @@ import type { Lens, DisplayAttributeConfig, AppConfig, FormatLabelsConfig } from
 
 export const DEFAULT_CROP_FACTOR = 1.5;
 
+/**
+ * config.json 由来の属性キー（実行時文字列）でレンズのフィールドを引く。
+ * キーの存在を型システムでは保証できないため、キャストをここに集約する。
+ */
+export function getLensValue(lens: Lens, key: string): unknown {
+  return (lens as unknown as Record<string, unknown>)[key];
+}
+
 export function getFormatLabels(config: AppConfig): FormatLabelsConfig {
   return {
     fx: config.formatLabels?.fx ?? 'FX',
@@ -22,7 +30,7 @@ export function formatAttributeValue(
   attr: DisplayAttributeConfig,
   cropFactor: number = DEFAULT_CROP_FACTOR
 ): string {
-  const val = (lens as unknown as Record<string, unknown>)[attr.key];
+  const val = getLensValue(lens, attr.key);
 
   if (attr.format === 'rental') {
     if (val === null) return '—';

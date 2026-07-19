@@ -31,7 +31,6 @@
     "sectionLabelText": "#ffffff",
     "rowBackground": "#dcdcdc",
     "gridLineColor": "rgba(255, 255, 255, 0.4)",
-    "sectionDividerColor": "#ffffff",
     "lensDot": "#2563eb",
     "zoomBar": "#2563eb",
     "lensNameText": "#1a1a2e",
@@ -87,6 +86,7 @@
       "key": "maxAperture",
       "label": "最大絞り",
       "type": "select",
+      "match": "lte",
       "options": [1.2, 1.4, 1.8, 2.0, 2.8, 3.5, 4.0, 4.5, 5.0, 5.6, 6.3, 8.0, 11]
     },
     {

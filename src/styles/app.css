@@ -589,6 +589,16 @@
   background: var(--color-row-bg, #dcdcdc);
 }
 
+.row-grid-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-grid-line, #ffffff);
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* ─── Lens item ─────────────────────────────────────────────── */
 
 .lens-item {

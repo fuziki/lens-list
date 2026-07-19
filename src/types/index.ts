@@ -15,7 +15,6 @@ export interface ColorsConfig {
   sectionLabelText: string;
   rowBackground: string;
   gridLineColor: string;
-  sectionDividerColor: string;
   lensDot: string;
   zoomBar: string;
   lensNameText: string;
@@ -50,6 +49,8 @@ export interface SelectFilterConfig {
   label: string;
   type: 'select';
   options: (number | string)[];
+  /** 判定方法。lte: 選択値以下を通す（数値用）／ eq: 完全一致（省略時） */
+  match?: 'eq' | 'lte';
 }
 
 export interface ToggleFilterConfig {

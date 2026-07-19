@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import type { RefObject } from 'react';
-import type { AppConfig, GeometryContext, LensData, FilterState, Lens } from '../../types';
+import type { AppConfig, GeometryContext, LensData, Lens } from '../../types';
 import { TableHeader } from './TableHeader';
 import { Section } from './Section';
 
@@ -51,7 +51,6 @@ interface Props {
   config: AppConfig;
   geometry: GeometryContext;
   lensData: LensData;
-  filterState: FilterState;
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
   showNewBadge: boolean;
@@ -64,7 +63,6 @@ export function TableWrapper({
   config,
   geometry,
   lensData,
-  filterState,
   activeAttributes,
   rowHeight,
   showNewBadge,
@@ -93,8 +91,6 @@ export function TableWrapper({
               section={section}
               config={config}
               geometry={geometry}
-              filterState={filterState}
-              filters={config.filters}
               activeAttributes={activeAttributes}
               rowHeight={rowHeight}
               showNewBadge={showNewBadge}

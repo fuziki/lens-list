@@ -1,29 +1,17 @@
-import { useMemo } from 'react';
-import type { LensRow as LensRowType, Lens, AppConfig, GeometryContext, FilterState, FilterConfig } from '../../types';
-import { lensMatchesFilters } from '../../lib/filterLogic';
-import { PrimeLens } from './PrimeLens';
-import { ZoomLens } from './ZoomLens';
+import type { LensRow as LensRowType, Lens, AppConfig, GeometryContext } from '../../types';
+import { LensItem } from './LensItem';
 
 interface Props {
   row: LensRowType;
   config: AppConfig;
   geometry: GeometryContext;
-  filterState: FilterState;
-  filters: FilterConfig[];
   activeAttributes: ReadonlySet<string>;
   rowHeight: number;
   showNewBadge: boolean;
   onLensClick: (lens: Lens) => void;
 }
 
-export function LensRow({ row, config, geometry, filterState, filters, activeAttributes, rowHeight, showNewBadge, onLensClick }: Props) {
-  const visibleLenses = useMemo(
-    () => row.lenses.filter(lens => lensMatchesFilters(lens, filterState, filters)),
-    [row.lenses, filterState, filters]
-  );
-
-  if (visibleLenses.length === 0) return null;
-
+export function LensRow({ row, config, geometry, activeAttributes, rowHeight, showNewBadge, onLensClick }: Props) {
   return (
     <div
       className="row"
@@ -31,43 +19,19 @@ export function LensRow({ row, config, geometry, filterState, filters, activeAtt
       style={{ height: rowHeight }}
     >
       {geometry.markers.map(m => (
-        <div
-          key={'vline-' + m.fxMm}
-          style={{
-            position: 'absolute',
-            left: m.x - 1,
-            top: 0,
-            bottom: 0,
-            width: 2,
-            background: config.colors.gridLineColor,
-            pointerEvents: 'none',
-            zIndex: 0,
-          }}
+        <div key={'vline-' + m.fxMm} className="row-grid-line" style={{ left: m.x - 1 }} />
+      ))}
+      {row.lenses.map(lens => (
+        <LensItem
+          key={lens.id}
+          lens={lens}
+          config={config}
+          geometry={geometry}
+          activeAttributes={activeAttributes}
+          showNewBadge={showNewBadge}
+          onClick={() => onLensClick(lens)}
         />
       ))}
-      {visibleLenses.map(lens =>
-        lens.type === 'prime' ? (
-          <PrimeLens
-            key={lens.id}
-            lens={lens}
-            config={config}
-            geometry={geometry}
-            activeAttributes={activeAttributes}
-            showNewBadge={showNewBadge}
-            onClick={() => onLensClick(lens)}
-          />
-        ) : (
-          <ZoomLens
-            key={lens.id}
-            lens={lens}
-            config={config}
-            geometry={geometry}
-            activeAttributes={activeAttributes}
-            showNewBadge={showNewBadge}
-            onClick={() => onLensClick(lens)}
-          />
-        )
-      )}
     </div>
   );
 }
